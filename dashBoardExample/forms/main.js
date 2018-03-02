@@ -51,7 +51,12 @@ function initMenu() {
 				id: inst[i].name,
 				formName: inst[i].name,
 				text: inst[i].title,
-				data: { type: 'instance', text: inst[i].title, formName: inst[i].name }
+				data: { type: 'instance', text: inst[i].title, formName: inst[i].name },
+				menuItems: [{
+					id: 'remove',
+					text: "Remove",
+					data: { type: 'remove_instance', formName: inst[i].name }
+				}]
 			}
 
 			if (!inst[i].parent)
@@ -73,11 +78,13 @@ function onMenuItemSelected(menuItemId, event) {
 	var item = elements.sidenav.getMenuItem(menuItemId);
 	var form = forms[item.data['formName']];
 	if (!form) return;
-	// check if this is an instance type
-	if (item.data['type'] == 'instance') {
+
+	switch (item.data['type']) {
+	case 'instance':
 		//show the instance
 		scopes.svyNavigation.open(new scopes.svyNavigation.NavigationItem(scopes.UI.getInstance(item.data['formName']).name, item.text, item.text));
-	} else if (item.data['type'] == 'dashboard') {
+		break;
+	case 'dashboard':
 		//create a new instance of a dashboard
 		var i = new scopes.UI.Instance(item.text, item.data['formName']);
 		scopes.UI.instances.push(i);
@@ -87,6 +94,17 @@ function onMenuItemSelected(menuItemId, event) {
 		initMenu();
 		//finally navigate to the instance
 		scopes.svyNavigation.open(new scopes.svyNavigation.NavigationItem(i.name, item.text, item.text));
+		break;
+	case 'remove_instance':
+		application.output('remove instances')
+		scopes.UI.removeInstance(item.data['formName'])
+		//update side navigation
+		initMenu();
+		elements.sidenav.containedForm = forms.base;
+		selectMenuItem('dashboard')
+		break;
+	default:
+		break;
 	}
 
 	return;

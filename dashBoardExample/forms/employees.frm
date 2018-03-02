@@ -3,9 +3,11 @@ dataSource:"db:/example_data/employees",
 extendsID:"68DADF7F-645D-40BE-A9C6-5B4444FFEBDC",
 items:[
 {
+anchors:11,
 displaysTags:true,
+horizontalAlignment:0,
 location:"0,0",
-size:"184,39",
+size:"262,39",
 text:"<h3>Employees <\/h3>",
 transparent:true,
 typeid:7,
@@ -26,18 +28,18 @@ typeid:19,
 uuid:"7627D417-EF34-4092-8216-F8F907619053"
 },
 {
-height:44,
-partType:2,
-typeid:19,
-uuid:"809391B9-0BD3-4441-9B77-88FC462203C2"
-},
-{
 dataProviderID:"city",
 location:"5,125",
 size:"150,20",
 text:"City",
 typeid:7,
 uuid:"90CA5B9E-CB18-4674-A467-FF336601034B"
+},
+{
+height:40,
+partType:1,
+typeid:19,
+uuid:"9BB77726-5938-4F7A-BDBF-6CBD3EEF1E6B"
 },
 {
 dataProviderID:"employeeid",

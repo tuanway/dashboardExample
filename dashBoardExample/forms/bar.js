@@ -29,6 +29,10 @@ function onShow(firstShow, event) {
 		}
 		//The options object
 		var options = {
+			animation: { numSteps: 1, duration: 2000 },
+			legend: {
+				display: false
+			},
 			responsive: false,
 			scales: {
 				xAxes: [{ stacked: true }],

@@ -25,10 +25,10 @@ specname:\"column\"\
 items:[
 {
 json:{
+height:950,
 styleClass:"layout_1"
 },
 name:"t1",
-styleClass:"layout_1",
 typeName:"bootstrapcomponents-tablesspanel",
 typeid:47,
 uuid:"232E4B48-A901-4334-9943-ED81C4E51957"

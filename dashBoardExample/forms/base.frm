@@ -1,0 +1,9 @@
+customProperties:"formComponent:false",
+encapsulation:60,
+name:"base",
+namedFoundSet:"separate",
+navigatorID:"-1",
+scrollbars:36,
+showInMenu:true,
+typeid:3,
+uuid:"68DADF7F-645D-40BE-A9C6-5B4444FFEBDC"

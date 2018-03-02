@@ -1,0 +1,12 @@
+customProperties:"formComponent:false,\
+methods:{\
+onShowMethodID:{\
+arguments:null,\
+parameters:null\
+}\
+}",
+extendsID:"68DADF7F-645D-40BE-A9C6-5B4444FFEBDC",
+name:"layout_base",
+onShowMethodID:"F1F4EBF2-CD9F-487B-A2BF-083810725920",
+typeid:3,
+uuid:"376CCDD6-5435-4038-996A-48D9A3B56203"

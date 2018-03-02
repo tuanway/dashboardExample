@@ -1,0 +1,47 @@
+*:focus {
+	outline: none !important;
+}
+
+.layout_15,.layout_21,.layout_1 {
+	border: 1px dotted lightgray;
+	width: 100%;
+}
+
+.layout_1 {
+	height: 100vw;
+}
+
+.layout_15 {
+	height: 300px;
+}
+
+.layout_21 {
+	height: 500px;
+}
+
+.picker_btn {
+	border-radius: 15px;
+	color: gray;
+}
+
+.picker_btn:before {
+	content: "\f0fe";
+	font-family: FontAwesome;
+	font-size: 35px;
+}
+
+.main_body {
+	height: 100vh;
+	width: 100vw;
+}
+
+.header {
+	border-bottom: 1px solid lightgray;
+	box-shadow: 1px 1px 10px gray;
+	width: 100%;
+}
+
+.menu_btn {
+	font-size: 25px;
+	border: none;
+}

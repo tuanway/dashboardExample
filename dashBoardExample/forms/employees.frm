@@ -36,7 +36,7 @@ typeid:7,
 uuid:"90CA5B9E-CB18-4674-A467-FF336601034B"
 },
 {
-height:40,
+height:55,
 partType:1,
 typeid:19,
 uuid:"9BB77726-5938-4F7A-BDBF-6CBD3EEF1E6B"

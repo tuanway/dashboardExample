@@ -45,7 +45,7 @@ typeid:7,
 uuid:"D180B300-E0B3-4049-B2B9-CAD14B091101"
 },
 {
-height:40,
+height:55,
 partType:1,
 typeid:19,
 uuid:"F54DD5B3-8D32-40A0-85FA-140E957BEC5F"

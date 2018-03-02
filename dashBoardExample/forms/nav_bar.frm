@@ -6,7 +6,7 @@ items:[
 displaysTags:true,
 location:"48,13",
 size:"139,20",
-text:"<h4>Dashboard <\/h4>",
+text:"<h4>SERVOY <\/h4>",
 transparent:true,
 typeid:7,
 uuid:"5050F9AA-787F-4F9D-A8E7-BFC77D0F5B13"

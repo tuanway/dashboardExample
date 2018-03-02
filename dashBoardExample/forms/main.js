@@ -13,10 +13,12 @@ var menu;
 function initMenu() {
 	menu = [{
 		id: 'dashboard',
+		iconStyleClass: 'glyphicon glyphicon-dashboard',
 		text: "Dashboard",
 		data: { },
 		menuItems: [{
 			id: 'generate_layout',
+			iconStyleClass: 'glyphicon glyphicon-plus',
 			text: "Generate",
 			data: { },
 			menuItems: [{
@@ -54,6 +56,7 @@ function initMenu() {
 				data: { type: 'instance', text: inst[i].title, formName: inst[i].name },
 				menuItems: [{
 					id: 'remove',
+					iconStyleClass: 'glyphicon glyphicon-remove',
 					text: "Remove",
 					data: { type: 'remove_instance', formName: inst[i].name }
 				}]

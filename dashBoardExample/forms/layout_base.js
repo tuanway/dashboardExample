@@ -12,6 +12,4 @@ function onShow(firstShow, event) {
 	if (firstShow) {
 		forms.main.selectMenuItem(scopes.svyNavigation.getCurrentItem().getFormName())
 	}
-	//hide menu to show full layout
-	forms.main.openMenu(event);
 }

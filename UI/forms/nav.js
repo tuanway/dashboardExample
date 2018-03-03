@@ -98,8 +98,7 @@ function onMenuItemSelected(menuItemId, event) {
 		//finally navigate to the instance
 		scopes.svyNavigation.open(new scopes.svyNavigation.NavigationItem(i.name, item.text, item.text));
 		break;
-	case 'remove_instance':
-		application.output('remove instances')
+	case 'remove_instance':		
 		scopes.UI.removeInstance(item.data['formName'])
 		//update side navigation
 		initMenu();

@@ -6,7 +6,7 @@
  *
  * @private
  *
- * @properties={typeid:24,uuid:"E51FB4A4-134C-4B0E-A777-A8E3DB5D72FA"}
+ * @properties={typeid:24,uuid:"7396348D-EB62-420B-87FB-99EEEF232166"}
  */
 function onShow(firstShow, event) {
 	if (firstShow) {
@@ -23,7 +23,7 @@ function onShow(firstShow, event) {
  *
  * @private
  *
- * @properties={typeid:24,uuid:"7FD3E35B-302C-482F-90E3-DF7989B6FA93"}
+ * @properties={typeid:24,uuid:"C75E3AB0-624C-4237-9BF5-79935ED2F12E"}
  */
 function onElementFocusGained(event) {
 	//hide menu if it's open

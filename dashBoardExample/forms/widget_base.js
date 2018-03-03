@@ -5,7 +5,7 @@
  *
  * @private
  *
- * @properties={typeid:24,uuid:"C7B11117-374C-4FF0-A997-0295FD6B422F"}
+ * @properties={typeid:24,uuid:"2A552236-5C7F-4801-A93E-9B90A9909934"}
  */
 function onAction(event) {
 	//hide menu if it's open

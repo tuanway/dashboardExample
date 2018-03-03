@@ -3,7 +3,7 @@ layout:{\
 responsive:true\
 }",
 encapsulation:60,
-extendsID:"D260F3A4-45DB-4662-9CF9-8E71126051F6",
+extendsID:"36298F19-6F02-47EE-BB31-3F336EED29A6",
 items:[
 {
 customProperties:"attributes:{\

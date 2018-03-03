@@ -7,36 +7,11 @@ var menu;
 
 /**
  * Initialize the menu
+ * @public 
  * @properties={typeid:24,uuid:"2F1F43B3-A5D5-46FA-92A7-521DE7D381B9"}
  * @SuppressWarnings(wrongparameters)
  */
-function initMenu() {
-	menu = [{
-		id: 'dashboard',
-		iconStyleClass: 'glyphicon glyphicon-dashboard',
-		text: "Dashboard",
-		data: { },
-		menuItems: [{
-			id: 'generate_layout',
-			iconStyleClass: 'glyphicon glyphicon-plus',
-			text: "Generate",
-			data: { },
-			menuItems: [{
-				id: 'layout_15',
-				text: "Layout Type (15)",
-				data: { type: 'dashboard', formName: 'layout_15' }
-			}, {
-				id: 'layout_21',
-				text: "Layout Type (2x1)",
-				data: { type: 'dashboard', formName: 'layout_21' }
-			}, {
-				id: 'layout_1',
-				text: "Layout Type (1)",
-				data: { type: 'dashboard', formName: 'layout_1' }
-			}]
-		},
-		]
-	}];
+function initMenu() {	
 	//create a menu for instances if we have them
 	var inst = scopes.UI.instances;
 	if (inst.length) {
@@ -50,15 +25,15 @@ function initMenu() {
 		for (var i = 0; i < inst.length; i++) {
 			/** @type {servoyextra-sidenav.MenuItem} */
 			var menuItem = {
-				id: inst[i].name,
-				formName: inst[i].name,
-				text: inst[i].title,
-				data: { type: 'instance', text: inst[i].title, formName: inst[i].name },
+				id: inst[i].getName(),
+				formName: inst[i].getName(),
+				text: inst[i].getTitle(),
+				data: { type: 'instance', text: inst[i].getTitle(), formName: inst[i].getName() },
 				menuItems: [{
 					id: 'remove',
 					iconStyleClass: 'glyphicon glyphicon-remove',
 					text: "Remove",
-					data: { type: 'remove_instance', formName: inst[i].name }
+					data: { type: 'remove_instance', formName: inst[i].getName() }
 				}]
 			}
 
@@ -73,43 +48,11 @@ function initMenu() {
 /**
  * @param {String} menuItemId
  * @param {JSEvent} event
- * @private
+ * @public 
  *
  * @properties={typeid:24,uuid:"B6DDCAA3-04E9-43BA-A850-9FF997519F2B"}
  */
 function onMenuItemSelected(menuItemId, event) {
-	var item = elements.sidenav.getMenuItem(menuItemId);
-	var form = forms[item.data['formName']];
-	if (!form) return;
-
-	switch (item.data['type']) {
-	case 'instance':
-		//show the instance
-		scopes.svyNavigation.open(new scopes.svyNavigation.NavigationItem(scopes.UI.getInstance(item.data['formName']).name, item.text, item.text));
-		break;
-	case 'dashboard':
-		//create a new instance of a dashboard
-		var i = new scopes.UI.Instance(item.text, item.data['formName']);
-		scopes.UI.instances.push(i);
-		//setup a layout
-		scopes.UI.setupInstanceLayout(i);
-		//update side navigation
-		initMenu();
-		//finally navigate to the instance
-		scopes.svyNavigation.open(new scopes.svyNavigation.NavigationItem(i.name, item.text, item.text));
-		break;
-	case 'remove_instance':		
-		scopes.UI.removeInstance(item.data['formName'])
-		//update side navigation
-		initMenu();
-		elements.sidenav.containedForm = forms.base;
-		selectMenuItem('dashboard')
-		break;
-	default:
-		break;
-	}
-
-	return;
 }
 
 /**

@@ -12,31 +12,97 @@ var instances = []
  * @properties={typeid:24,uuid:"5286903B-B989-4B32-9FF2-63FCC24CFF85"}
  */
 function Instance(title, f) {
-	//get unique identifier for intance;
+
+	/**
+	 * Generate unique identifier for name
+	 * @protected
+	 */
 	this.name = application.getUUID().toString().split('-').join('');
 	if (!application.createNewFormInstance(f, this.name)) throw 'failed to create instance';
-	
+
 	//create window for instance
 	var w = application.createWindow(this.name, JSWindow.DIALOG);
 	w.storeBounds = true;
-	this.title = title;
 	w.resizable = true;
+
+	/**
+	 * Generate unique identifier for name
+	 * @protected
+	 */
+	this.title = title;
+
+	/**
+	 * instance window object
+	 * @protected
+	 */
 	this.window = w;
+	/**
+	 * Generate unique identifier for name
+	 * @protected
+	 */
 	this.x = 0;
+	/**
+	 * Generate unique identifier for name
+	 * @protected
+	 */
 	this.y = 0;
+	/**
+	 * Generate unique identifier for name
+	 * @protected
+	 */
 	this.h = 0;
+	/**
+	 * Generate unique identifier for name
+	 * @protected
+	 */
 	this.w = 0;
 
-	/** @type {Array<Instance>} */
+	/** @type {Array<Instance>}
+	 * @protected
+	 * */
 	this.children = [];
 
+	/**
+	 * @public
+	 * @return {String}
+	 */
+	this.getName = function() {
+		return this.name;
+	}
+	
+	/**
+	 * @public
+	 * @return {String}
+	 */
+	this.getTitle = function() {
+		return this.title;
+	}
+
+	/**
+	 * @public
+	 * @return {Array<Instance>}
+	 */
+	this.getChildren = function() {
+		return this.children;
+	}
+
+	/**
+	 * @public
+	 * Show instance in a window
+	 */
 	this.show = function() {
 		this.window.show(this.name);
 	}
+	/**
+	 * @public
+	 * Hide instance if displayed via window
+	 */
 	this.hide = function() {
 		this.window.hide();
 	}
+
 	/**
+	 * @public
 	 * Setup a Layout for a form instance
 	 * @param {Instance} i
 	 */
@@ -51,13 +117,13 @@ function Instance(title, f) {
  * @properties={typeid:24,uuid:"697E6426-39FB-40BF-A936-D910CB980D6C"}
  */
 function setupInstanceLayout(ins) {
-	var els = forms[ins.name].elements;
+	var els = forms[ins.getName()].elements;
 	for (var i = 0; i < els.length; i++) {
 		var e = els[i];
 		// look for tabless panels in a layout and create dashboard base
 		if (e.getElementType() == 'bootstrapcomponents-tablesspanel') {
 			var c = new Instance('i' + i, 'widget_base');
-			e.containedForm = c.name;
+			e.containedForm = c.getName();
 		}
 	}
 }
@@ -70,7 +136,7 @@ function setupInstanceLayout(ins) {
  */
 function removeInstance(name) {
 	for (var i = 0; i < instances.length; i++) {
-		if (name == instances[i].name) {
+		if (name == instances[i].getName()) {
 			instances.splice(i, 1);
 			return true;
 		}
@@ -86,7 +152,7 @@ function removeInstance(name) {
 function getInstance(name) {
 	if (!name) return null;
 	for (var i = 0; i < instances.length; i++) {
-		if (name == instances[i].name) {
+		if (name == instances[i].getName()) {
 			return instances[i];
 		}
 	}
@@ -101,7 +167,7 @@ function getInstance(name) {
 function hideChildInstances(name) {
 	var ins = getInstance(name)
 	if (!ins) return;
-	var children = ins.children
+	var children = ins.getChildren()
 	for (var i = 0; i < children.length; i++) {
 		children[i].hide();
 	}
@@ -116,7 +182,7 @@ function hideChildInstances(name) {
 function showChildInstances(name) {
 	var ins = getInstance(name)
 	if (!ins) return;
-	var children = ins.children
+	var children = ins.getChildren()
 	for (var i = 0; i < children.length; i++) {
 		children[i].show()
 	}
@@ -130,9 +196,9 @@ function showChildInstances(name) {
 function removeChildInstance(parent, child) {
 	var ins = getInstance(parent)
 	if (!ins) return;
-	var children = ins.children
+	var children = ins.getChildren()
 	for (var i = 0; i < children.length; i++) {
-		if (children[i].name == child) {
+		if (children[i].getName() == child) {
 			children.splice(i, 1)
 			return;
 		}
@@ -149,9 +215,9 @@ function removeChildInstance(parent, child) {
 function getChildInstance(parent, child) {
 	if (!getInstance(parent)) return null;
 
-	var children = getInstance(parent).children
+	var children = getInstance(parent).getChildren()
 	for (var i = 0; i < children.length; i++) {
-		if (children[i].name == child) {
+		if (children[i].getName() == child) {
 			return children[i];
 		}
 	}

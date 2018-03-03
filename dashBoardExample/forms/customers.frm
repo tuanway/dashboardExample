@@ -14,7 +14,7 @@ uuid:"60A674A3-D19D-469B-96E1-C7AF4AB6CAB6"
 {
 dataProviderID:"customerid",
 location:"10,76",
-size:"100,20",
+size:"60,20",
 text:"ID",
 typeid:7,
 uuid:"712E8D67-C6B2-4C50-A471-18ABAECDA477"
@@ -36,7 +36,7 @@ uuid:"A9F74E05-1BBB-46CE-8124-31BEBC46D27E"
 {
 dataProviderID:"companyname",
 location:"10,104",
-size:"80,20",
+size:"130,20",
 text:"Company",
 typeid:7,
 uuid:"AAEA778D-95F8-4D37-9508-33DE4C70B629"

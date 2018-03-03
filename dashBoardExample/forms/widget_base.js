@@ -12,7 +12,7 @@ function onAction(event) {
 	if (forms.main.isMenuOpen()){
 		forms.main.openMenu(event);
 	}
-	var c = plugins.dialogs.showSelectDialog('Choose Widget', 'Choose a widget to create', 'customers', 'employees', 'pie', 'bar', 'line');
+	var c = plugins.dialogs.showSelectDialog('Choose Widget', 'Choose a widget to create', 'customers', 'orders', 'pie', 'bar', 'line');
 	//get parent layout
 	var p = scopes.UI.getInstance(scopes.svyNavigation.getCurrentItem().getFormName());
 	if (c) {
@@ -21,7 +21,7 @@ function onAction(event) {
 		var i = new scopes.UI.Instance(c, c);
 		//add the child to a parent
 		p.addChild(i);
-		elements.tabless.addTab(forms[i.name])
+		elements.tabless.addTab(forms[i.getName()])
 		elements.tabless.visible = true;
 	}
 }

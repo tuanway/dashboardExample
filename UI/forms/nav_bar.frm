@@ -1,11 +1,17 @@
-customProperties:"formComponent:false",
+customProperties:"formComponent:false,\
+methods:{\
+onLoadMethodID:{\
+arguments:null,\
+parameters:null\
+}\
+}",
 encapsulation:60,
 extendsID:"4B939134-7322-4178-88E3-5ABF3A33B03F",
 items:[
 {
 displaysTags:true,
 location:"5,5",
-name:"settings_btn",
+name:"menu_btn",
 onActionMethodID:"BB2713FD-F287-4E63-B8A1-D3766588DA44",
 onDoubleClickMethodID:"-1",
 onRightClickMethodID:"-1",
@@ -43,25 +49,29 @@ y:7
 menuItems:[
 {
 iconName:"fa fa-desktop",
+itemId:"app_settings",
+onAction:"31897363-A857-4139-A7AF-EF29FAB391DC",
 svyUUID:"B10B9DB5-B6D8-4CD6-A3ED-A730BB9B47D4",
 text:"Application Settings"
 },
 {
 iconName:"fa fa-sign-out",
+itemId:"sign_out",
+onAction:"31897363-A857-4139-A7AF-EF29FAB391DC",
 svyUUID:"BDC2DE12-E3A5-4CC3-8EFB-DC2B8C6580DC",
 text:"Log out"
 }
 ],
+onMenuItemSelected:"1CCB4805-470F-4A68-8A30-0C5E1E030F2D",
 size:{
-height:26,
+height:27,
 width:41
 },
-styleClass:"search_box",
 text:" "
 },
 location:"418,7",
-name:"dropdown_439",
-size:"41,26",
+name:"settings_btn",
+size:"41,27",
 typeName:"bootstrapextracomponents-dropdown",
 typeid:47,
 uuid:"D19CA41E-4219-4C7C-A089-97913DCA60A7"
@@ -86,31 +96,35 @@ json:{
 addOnButtons:[
 {
 imageStyleClass:"fa fa-search",
+onAction:"D742E387-E072-4736-BCA3-5142C138044A",
 styleClass:"search_btn",
 svyUUID:"6E10A784-FE60-45C6-BCF0-8A8FF7DF9443"
 }
 ],
 anchors:3,
+dataProvider:"search",
 location:{
-x:268,
+x:247,
 y:7
 },
+onAction:"D742E387-E072-4736-BCA3-5142C138044A",
 placeholderText:"Search...",
 size:{
 height:23,
-width:146
+width:156
 },
 styleClass:"search_box"
 },
-location:"268,7",
+location:"247,7",
 name:"search",
-size:"146,23",
+size:"156,23",
 typeName:"bootstrapextracomponents-input-group",
 typeid:47,
 uuid:"DEBCEF4D-F233-4176-9053-26A02C6E3C6A"
 }
 ],
 name:"nav_bar",
+onLoadMethodID:"C4123174-E07B-4B27-8A9A-112E8D06C50E",
 showInMenu:true,
 size:"472,64",
 typeid:3,

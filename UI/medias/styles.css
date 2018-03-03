@@ -20,7 +20,8 @@
 }
 
 .picker_btn {
-	border: 3px dotted gray; border-radius : 15px;
+	border: 3px dotted gray;
+	border-radius: 15px;
 	color: gray;
 	border-radius: 15px;
 }
@@ -42,7 +43,8 @@
 	width: 100%;
 }
 
-.search_box {
+.search_box {	
+	width: 170px;
 	font-weight: bold;
 }
 
@@ -56,6 +58,10 @@
 	color: #333;
 	background-color: #e6e6e6;
 	border-color: #adadad;
+}
+
+.settings_btn {
+	border: none;
 }
 
 .menu_btn {
@@ -76,6 +82,7 @@
 .open>.dropdown-menu {
 	position: relative;
 	left: auto !important;
-	right: 0px !important;
+	right: -2px !important;
 	top: 42px;
+	padding: 1px;
 }

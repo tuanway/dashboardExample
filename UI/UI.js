@@ -24,6 +24,8 @@ function Instance(title, f) {
 	var w = application.createWindow(this.name, JSWindow.DIALOG);
 	w.storeBounds = true;
 	w.resizable = true;
+	w.title = title;
+	w.setInitialBounds(0,0,300,300);
 
 	/**
 	 * Generate unique identifier for name
@@ -36,26 +38,6 @@ function Instance(title, f) {
 	 * @protected
 	 */
 	this.window = w;
-	/**
-	 * Generate unique identifier for name
-	 * @protected
-	 */
-	this.x = 0;
-	/**
-	 * Generate unique identifier for name
-	 * @protected
-	 */
-	this.y = 0;
-	/**
-	 * Generate unique identifier for name
-	 * @protected
-	 */
-	this.h = 0;
-	/**
-	 * Generate unique identifier for name
-	 * @protected
-	 */
-	this.w = 0;
 
 	/** @type {Array<Instance>}
 	 * @protected

@@ -13,6 +13,11 @@ function onMenuClick(event) {
  */
 function initSettingsMenu() {
 	settings_items = [{
+		itemId: 'profile',
+		enabled: true,
+		iconName: 'fa fa-user',
+		text: 'Tuan Nguyen'
+	},{
 		itemId: 'app_settings',
 		enabled: true,
 		iconName: 'fa fa-desktop',

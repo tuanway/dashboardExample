@@ -41,7 +41,7 @@ function onAction$Search(event) {
  * @properties={typeid:24,uuid:"1CCB4805-470F-4A68-8A30-0C5E1E030F2D"}
  */
 function onMenuItemSelected(event, menuItem) {
-	plugins.dialogs.showWarningDialog('INFO', menuItem.text + ' is not implemented.');
+	plugins.dialogs.showWarningDialog('INFO', menuItem.itemId + ' is not implemented.');
 	//override function and implement settings.
 }
 

@@ -1,8 +1,27 @@
 /**
+ * @protected
  * @type {Array<Instance>}
  * @properties={typeid:35,uuid:"9C17C1CD-FF0C-4644-A5AD-B6B45356DECD",variableType:-4}
  */
 var instances = []
+
+/**
+ * store an Instance in array
+ * @param {Instance} i
+ *
+ * @properties={typeid:24,uuid:"49518761-EBA8-4D92-9BF4-2E1EBC7FD9E2"}
+ */
+function storeInstance(i) {
+	instances.push(i)
+}
+
+/**
+ * @return {Array<Instance>}
+ * @properties={typeid:24,uuid:"7DDC9994-065B-4EB4-A0ED-54A6C708B42F"}
+ */
+function getAllInstances() {
+	return instances;
+}
 
 /**
  * @constructor
@@ -18,6 +37,13 @@ function Instance(title, f) {
 	 * @protected
 	 */
 	this.name = application.getUUID().toString().split('-').join('');
+
+	/**
+	 * Generate unique identifier for name
+	 * @protected
+	 */
+	this.formName = f;
+
 	if (!application.createNewFormInstance(f, this.name)) throw 'failed to create instance';
 
 	//create window for instance
@@ -25,7 +51,7 @@ function Instance(title, f) {
 	w.storeBounds = true;
 	w.resizable = true;
 	w.title = title;
-	w.setInitialBounds(0,0,300,300);
+	w.setInitialBounds(0, 0, 300, 300);
 
 	/**
 	 * Generate unique identifier for name
@@ -51,7 +77,15 @@ function Instance(title, f) {
 	this.getName = function() {
 		return this.name;
 	}
-	
+
+	/**
+	 * @public
+	 * @return {String}
+	 */
+	this.getFormName = function() {
+		return this.formName;
+	}
+
 	/**
 	 * @public
 	 * @return {String}
@@ -108,6 +142,7 @@ function setupInstanceLayout(ins) {
 			e.containedForm = c.getName();
 		}
 	}
+	return els;
 }
 
 /**

@@ -7,19 +7,20 @@ var menu;
 
 /**
  * Initialize the menu
- * @public 
+ * @public
  * @properties={typeid:24,uuid:"2F1F43B3-A5D5-46FA-92A7-521DE7D381B9"}
  * @SuppressWarnings(wrongparameters)
  */
-function initMenu() {	
+function initMenu() {
 	//create a menu for instances if we have them
 	var inst = scopes.UI.instances;
 	if (inst.length) {
 		menu.push({
-			text: 'Instances:'
-		})
-		menu.push({
 			isDivider: true
+		})
+
+		menu.push({
+			text: 'Instances:'
 		})
 
 		for (var i = 0; i < inst.length; i++) {
@@ -29,13 +30,43 @@ function initMenu() {
 				formName: inst[i].getName(),
 				text: inst[i].getTitle(),
 				data: { type: 'instance', text: inst[i].getTitle(), formName: inst[i].getName() },
-				menuItems: [{
-					id: 'remove',
-					iconStyleClass: 'glyphicon glyphicon-remove',
-					text: "Remove",
-					data: { type: 'remove_instance', formName: inst[i].getName() }
-				}]
+				menuItems: []
 			}
+
+			//if an instance has children - add them to a deeper level
+			var ch = inst[i].getChildren();
+			if (ch.length) {
+				var chMenu = {
+					id: inst[i].getName()+'_children',
+					iconStyleClass: '',
+					text: "Children",
+					data: { },
+					menuItems: []
+				}
+				for (var j = 0; j < ch.length; j++) {
+					chMenu.menuItems.push({
+						id: ch[j].getName(),
+						formName: ch[j].getName(),
+						text: ch[j].getTitle(),
+						data: { type: 'children' },
+						menuItems: [{
+							id: 'remove_item',
+							iconStyleClass: 'glyphicon glyphicon-remove',
+							text: "Remove",
+							data: { type: 'remove_instance', formName: ch[j].getName() }
+						}]
+					})
+				}
+				menuItem.menuItems.push(chMenu)
+			}
+
+			//add removal option for instance
+			menuItem.menuItems.push({
+				id: 'remove',
+				iconStyleClass: 'glyphicon glyphicon-remove',
+				text: "Remove",
+				data: { type: 'remove_instance', formName: inst[i].getName() }
+			})
 
 			if (!inst[i].parent)
 				menu.push(menuItem)
@@ -48,12 +79,11 @@ function initMenu() {
 /**
  * @param {String} menuItemId
  * @param {JSEvent} event
- * @public 
+ * @public
  *
  * @properties={typeid:24,uuid:"B6DDCAA3-04E9-43BA-A850-9FF997519F2B"}
  */
-function onMenuItemSelected(menuItemId, event) {
-}
+function onMenuItemSelected(menuItemId, event) { }
 
 /**
  * @properties={typeid:24,uuid:"B99548B2-5065-44B0-8B31-96D6655A4E15"}

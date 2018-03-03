@@ -17,7 +17,7 @@ function initSettingsMenu() {
 		enabled: true,
 		iconName: 'fa fa-user',
 		text: 'Tuan Nguyen'
-	},{
+	}, {
 		itemId: 'app_settings',
 		enabled: true,
 		iconName: 'fa fa-desktop',
@@ -29,4 +29,50 @@ function initSettingsMenu() {
 		text: 'Logout'
 	}];
 	return _super.initSettingsMenu.apply(this, arguments);
+}
+
+/**
+ * @param {JSEvent} event
+ * @param {bootstrapextracomponents-dropdown.MenuItem} menuItem
+ *
+ * @properties={typeid:24,uuid:"395D28CD-7F12-499B-BC38-4050BCE5C184"}
+ */
+function onMenuItemSelected(event, menuItem) {
+	switch (menuItem.itemId) {
+	case 'log_out':
+		//save dashboard data to localstorage
+
+		var ins = scopes.UI.getAllInstances();
+		var data = [];
+		for (var i = 0; i < ins.length; i++) {
+
+			var ip = {
+				name: ins[i].getName(),
+				title: ins[i].getTitle(),
+				formName: ins[i].getFormName(),
+				children: []
+			}
+
+			//get children
+			var ch = ins[i].getChildren();
+			for (var j = 0; j < ch.length; j++) {
+				ip.children.push({
+					name: ch[j].getName(),
+					title: ch[j].getTitle(),
+					formName: ch[j].getFormName()
+				})
+			}
+
+			data.push(ip);
+
+		}
+
+		var val = plugins.serialize.toJSON(data)
+		plugins.webstorageLocalstorage.setItem('dashboard', val)
+
+		break;
+
+	default:
+		break;
+	}
 }

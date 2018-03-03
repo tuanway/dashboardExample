@@ -23,5 +23,6 @@ function onAction(event) {
 		p.addChild(i);
 		elements.tabless.addTab(forms[i.getName()])
 		elements.tabless.visible = true;
+		forms.main.initMenu();
 	}
 }

@@ -54,7 +54,7 @@ function onMenuItemSelected(menuItemId, event) {
 	case 'dashboard':
 		//create a new instance of a dashboard
 		var i = new scopes.UI.Instance(item.text, item.data['formName']);
-		scopes.UI.instances.push(i);
+		scopes.UI.storeInstance(i);
 		//setup a layout
 		scopes.UI.setupInstanceLayout(i);
 		//update side navigation

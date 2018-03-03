@@ -59,7 +59,8 @@ function onMenuItemSelected(event, menuItem) {
 				ip.children.push({
 					name: ch[j].getName(),
 					title: ch[j].getTitle(),
-					formName: ch[j].getFormName()
+					formName: ch[j].getFormName(),
+					tabIndex: ch[j].getTabIndex()
 				})
 			}
 

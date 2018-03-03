@@ -8,17 +8,28 @@
  * @properties={typeid:24,uuid:"2A552236-5C7F-4801-A93E-9B90A9909934"}
  */
 function onAction(event) {
+
 	//hide menu if it's open
-	if (forms.main.isMenuOpen()){
+	if (forms.main.isMenuOpen()) {
 		forms.main.openMenu(event);
 	}
 	var c = plugins.dialogs.showSelectDialog('Choose Widget', 'Choose a widget to create', 'customers', 'orders', 'pie', 'bar', 'line');
 	//get parent layout
 	var p = scopes.UI.getInstance(scopes.svyNavigation.getCurrentItem().getFormName());
 	if (c) {
+		//find out which container was selected
+		var els = forms[scopes.svyNavigation.getCurrentItem().getFormName()].elements
+		var tabIndex = 0;
+		for (var j = 0; j < els.length; j++) {
+			if (els[j].containedForm == controller.getName()) {
+				tabIndex = j;
+			}
+
+		}
+		//hide selection button
 		elements.picker_btn.visible = false;
 		//create a child dashboard item
-		var i = new scopes.UI.Instance(c, c);
+		var i = new scopes.UI.Instance(c, c, tabIndex);
 		//add the child to a parent
 		p.addChild(i);
 		elements.tabless.addTab(forms[i.getName()])

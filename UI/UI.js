@@ -28,9 +28,15 @@ function getAllInstances() {
  * Create an instance of a form
  * @param {String} title
  * @param {String} f form name
+ * @param {Number} [tabIndex] for child Instances ordering
  * @properties={typeid:24,uuid:"5286903B-B989-4B32-9FF2-63FCC24CFF85"}
  */
-function Instance(title, f) {
+function Instance(title, f, tabIndex) {
+
+	/**
+	 * @protected
+	 */
+	this.tabIndex = tabIndex
 
 	/**
 	 * Generate unique identifier for name
@@ -39,7 +45,6 @@ function Instance(title, f) {
 	this.name = application.getUUID().toString().split('-').join('');
 
 	/**
-	 * Generate unique identifier for name
 	 * @protected
 	 */
 	this.formName = f;
@@ -54,7 +59,6 @@ function Instance(title, f) {
 	w.setInitialBounds(0, 0, 300, 300);
 
 	/**
-	 * Generate unique identifier for name
 	 * @protected
 	 */
 	this.title = title;
@@ -76,6 +80,14 @@ function Instance(title, f) {
 	 */
 	this.getName = function() {
 		return this.name;
+	}
+
+	/**
+	 * @public
+	 * @return {Number}
+	 */
+	this.getTabIndex = function() {
+		return this.tabIndex;
 	}
 
 	/**

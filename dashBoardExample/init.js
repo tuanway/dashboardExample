@@ -13,19 +13,20 @@ function onSolutionOpen(arg, queryParams) {
 	scopes.UI.onSolutionOpen(arg, queryParams);
 
 	//reload dashboard data;
-	var r = plugins.webstorageLocalstorage.getItem('dashboard')
-	var d = plugins.serialize.fromJSON(r)
+	var r = plugins.webstorageLocalstorage.getItem('dashboard');
+	var d = plugins.serialize.fromJSON(r);
+	
 	//restore instances
 	for (var i = 0; i < d.length; i++) {
 		var ins = new scopes.UI.Instance(d[i].title, d[i].formName);		
 		var layout = scopes.UI.setupInstanceLayout(ins);	
 		if (d[i].children.length) {
 			for (var j = 0; j < d[i].children.length; j++) {
-				var ci = new scopes.UI.Instance(d[i].children[j].title, d[i].children[j].formName);
-				ins.addChild(ci);
-				forms[layout[j].containedForm].elements.tabless.addTab(forms[ci.getName()]);
-				forms[layout[j].containedForm].elements.tabless.visible = true;
-				forms[layout[j].containedForm].elements.picker_btn.visible = false;
+				var ci = new scopes.UI.Instance(d[i].children[j].title, d[i].children[j].formName, d[i].children[j].tabIndex);
+				ins.addChild(ci);				
+				forms[layout[ci.getTabIndex()].containedForm].elements.tabless.addTab(forms[ci.getName()]);
+				forms[layout[ci.getTabIndex()].containedForm].elements.tabless.visible = true;
+				forms[layout[ci.getTabIndex()].containedForm].elements.picker_btn.visible = false;
 			}
 		}
 		scopes.UI.storeInstance(ins);

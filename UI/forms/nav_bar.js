@@ -10,12 +10,9 @@ var search = null;
  *
  * @param {JSEvent} event the event that triggered the action
  *
- * @private
- *
- * @properties={typeid:24,uuid:"0C2C0EBD-FDE4-445B-ABA6-CE1930A264F6"}
- * @AllowToRunInFind
+ * @properties={typeid:24,uuid:"BB2713FD-F287-4E63-B8A1-D3766588DA44"}
  */
-function onAction(event) {
-	forms.main.openMenu(event);
+function onMenuClick(event) {
+	forms.nav.openMenu(event);
 	elements.other.requestFocus();
 }

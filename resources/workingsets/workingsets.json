@@ -6,6 +6,8 @@
 {
 "name":"base",
 "paths":[
+"/UI/.project",
+"/UI/forms/base.frm",
 "/dashBoardExample/.project",
 "/dashBoardExample/forms/layout_base.frm",
 "/dashBoardExample/forms/widget_base.frm"
@@ -18,6 +20,17 @@
 "/dashBoardExample/forms/layout_1.frm",
 "/dashBoardExample/forms/layout_15.frm",
 "/dashBoardExample/forms/layout_21.frm"
+]
+},
+{
+"name":"nav",
+"paths":[
+"/UI/.project",
+"/UI/forms/nav.frm",
+"/UI/forms/nav_bar.frm",
+"/dashBoardExample/.project",
+"/dashBoardExample/forms/main.frm",
+"/dashBoardExample/forms/main_nav_bar.frm"
 ]
 },
 {

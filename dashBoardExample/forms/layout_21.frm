@@ -104,8 +104,6 @@ uuid:"9D9785C6-4EB4-4E26-A3BA-B0482F58AA58"
 }
 ],
 name:"layout_21",
-onElementFocusGainedMethodID:"7FD3E35B-302C-482F-90E3-DF7989B6FA93",
-onShowMethodID:"E51FB4A4-134C-4B0E-A777-A8E3DB5D72FA",
 scrollbars:36,
 showInMenu:true,
 typeid:3,

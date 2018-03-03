@@ -1,13 +1,13 @@
 /**
  * @type {Array<servoyextra-sidenav.MenuItem>}
  *
- * @properties={typeid:35,uuid:"71E48D5C-E930-4F80-B588-F2B479E5C014",variableType:-4}
+ * @properties={typeid:35,uuid:"7D799F64-6EDF-4F46-BB73-2AF8ED4E341E",variableType:-4}
  */
 var menu;
 
 /**
  * Initialize the menu
- * @properties={typeid:24,uuid:"BFB97074-8F48-46E8-BFE2-97890A3C0E4A"}
+ * @properties={typeid:24,uuid:"2F1F43B3-A5D5-46FA-92A7-521DE7D381B9"}
  * @SuppressWarnings(wrongparameters)
  */
 function initMenu() {
@@ -75,7 +75,7 @@ function initMenu() {
  * @param {JSEvent} event
  * @private
  *
- * @properties={typeid:24,uuid:"9450E25C-BB5E-4EBD-8EBD-48376D8EBCA3"}
+ * @properties={typeid:24,uuid:"B6DDCAA3-04E9-43BA-A850-9FF997519F2B"}
  */
 function onMenuItemSelected(menuItemId, event) {
 	var item = elements.sidenav.getMenuItem(menuItemId);
@@ -114,7 +114,7 @@ function onMenuItemSelected(menuItemId, event) {
 }
 
 /**
- * @properties={typeid:24,uuid:"9C14D1D4-E57F-4A61-BD8E-1E0920BF19AD"}
+ * @properties={typeid:24,uuid:"B99548B2-5065-44B0-8B31-96D6655A4E15"}
  */
 function selectMenuItem(id) {
 	elements.sidenav.setSelectedMenuItem(id)
@@ -127,7 +127,7 @@ function selectMenuItem(id) {
  *
  * @private
  *
- * @properties={typeid:24,uuid:"D8FEE560-EF1F-49BF-A8DE-10DC21985C9A"}
+ * @properties={typeid:24,uuid:"115FCFCA-7750-4F82-9808-56635C9998C9"}
  */
 function onLoad(event) {
 	initMenu();
@@ -137,7 +137,7 @@ function onLoad(event) {
 /**
  * @private
  * @param {scopes.svyNavigation.NavigationEvent} event
- * @properties={typeid:24,uuid:"2394C6EE-E29A-4CFE-B350-2B1D22AC5CB2"}
+ * @properties={typeid:24,uuid:"C2B30FC4-1134-4562-8687-A8051FD52544"}
  */
 function onNavigation(event) {
 	var type = event.getEventType();
@@ -162,7 +162,7 @@ function onNavigation(event) {
 }
 
 /**
- * @properties={typeid:24,uuid:"733B5B9A-5594-41F5-9933-2C244A102075"}
+ * @properties={typeid:24,uuid:"3D36A07A-02C7-47FD-A06A-3E6F264ECC09"}
  */
 function isMenuOpen() {
 	return elements.sidenav.open;
@@ -175,7 +175,7 @@ function isMenuOpen() {
  *
  * @public
  *
- * @properties={typeid:24,uuid:"1C63C36C-D7D2-41E0-837B-ED76ED29EF70"}
+ * @properties={typeid:24,uuid:"12A709BF-C3C0-42A0-ACA2-01954982D734"}
  */
 function openMenu(event) {
 	if (elements.sidenav.open) {

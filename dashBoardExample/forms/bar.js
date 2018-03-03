@@ -29,6 +29,10 @@ function onShow(firstShow, event) {
 		}
 		//The options object
 		var options = {
+			title: {
+				display: true,
+				text: 'A Bar Chart'
+			},
 			animation: { numSteps: 1, duration: 2000 },
 			legend: {
 				display: false

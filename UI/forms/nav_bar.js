@@ -1,7 +1,7 @@
 /**
  * @type {String}
  *
- * @properties={typeid:35,uuid:"CE2B79BE-2E07-469C-A537-BAF2FACDF319"}
+ * @properties={typeid:35,uuid:"02BB8812-293D-4762-AAE0-D3FE820C6B04"}
  */
 var search = null;
 
@@ -12,8 +12,10 @@ var search = null;
  *
  * @private
  *
- * @properties={typeid:24,uuid:"D0B71685-D4DE-4F7F-AE3D-8730C7024934"}
+ * @properties={typeid:24,uuid:"0C2C0EBD-FDE4-445B-ABA6-CE1930A264F6"}
+ * @AllowToRunInFind
  */
 function onAction(event) {
 	forms.main.openMenu(event);
+	elements.other.requestFocus();
 }

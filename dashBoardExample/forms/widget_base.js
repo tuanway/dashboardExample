@@ -5,10 +5,14 @@
  *
  * @private
  *
- * @properties={typeid:24,uuid:"7C372A25-AC07-42EE-BBA4-3CD8247DE31D"}
+ * @properties={typeid:24,uuid:"C7B11117-374C-4FF0-A997-0295FD6B422F"}
  */
 function onAction(event) {
-	var c = plugins.dialogs.showSelectDialog('Choose Widget', 'Choose a widget to create', 'customers', 'employees', 'pie', 'bar');
+	//hide menu if it's open
+	if (forms.main.isMenuOpen()){
+		forms.main.openMenu(event);
+	}
+	var c = plugins.dialogs.showSelectDialog('Choose Widget', 'Choose a widget to create', 'customers', 'employees', 'pie', 'bar', 'line');
 	//get parent layout
 	var p = scopes.UI.getInstance(scopes.svyNavigation.getCurrentItem().getFormName());
 	if (c) {

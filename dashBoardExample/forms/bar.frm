@@ -1,6 +1,6 @@
 customProperties:"formComponent:false",
 encapsulation:60,
-extendsID:"68DADF7F-645D-40BE-A9C6-5B4444FFEBDC",
+extendsID:"4B939134-7322-4178-88E3-5ABF3A33B03F",
 items:[
 {
 anchors:15,

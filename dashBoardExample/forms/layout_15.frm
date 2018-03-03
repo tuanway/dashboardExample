@@ -3,7 +3,7 @@ layout:{\
 responsive:true\
 }",
 encapsulation:60,
-extendsID:"376CCDD6-5435-4038-996A-48D9A3B56203",
+extendsID:"D260F3A4-45DB-4662-9CF9-8E71126051F6",
 items:[
 {
 customProperties:"attributes:{\
@@ -381,6 +381,8 @@ uuid:"163C8856-FC55-490F-B167-F4C70A30ACF1"
 }
 ],
 name:"layout_15",
+onElementFocusGainedMethodID:"7FD3E35B-302C-482F-90E3-DF7989B6FA93",
+onShowMethodID:"E51FB4A4-134C-4B0E-A777-A8E3DB5D72FA",
 scrollbars:36,
 showInMenu:true,
 typeid:3,

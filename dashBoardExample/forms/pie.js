@@ -29,9 +29,13 @@ function onShow(firstShow, event) {
 		}
 		//The options object
 		var options = {
+			title: {
+				display: true,
+				text: 'A Pie Chart'
+			},
 			animation: { numSteps: 1, duration: 2000 },
 			legend: {
-				display: true
+				display: false
 			},
 			responsive: false,
 			scales: {

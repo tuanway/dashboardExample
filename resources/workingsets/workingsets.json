@@ -1,16 +1,11 @@
 [
 {
 "name":"Navigation",
-"paths":[
-"/UI/.project",
-"/UI/forms/nav.frm",
-"/UI/forms/nav_bar.frm"
-]
+"paths":[]
 },
 {
 "name":"base",
 "paths":[
-"/UI/forms/base.frm",
 "/dashBoardExample/.project",
 "/dashBoardExample/forms/layout_base.frm",
 "/dashBoardExample/forms/widget_base.frm"

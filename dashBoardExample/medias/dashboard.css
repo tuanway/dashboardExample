@@ -1,0 +1,40 @@
+@import('UI.css')
+/* layout Specific */
+
+.layout_15,.layout_21,.layout_1 {
+	border: 1px dotted lightgray;
+	width: 100%;
+}
+
+.layout_1 {
+	width: 100vw;
+	height: 100vh;
+}
+
+.layout_15 {
+	height: 300px;
+}
+
+.layout_21 {
+	height: 500px;
+}
+
+.table_title {
+	font-weight: bold;
+	font-size: 25px;
+}
+
+.picker_btn {
+	border: 3px dotted gray;
+	border-radius: 15px;
+	color: gray;
+	border-radius: 15px;
+}
+
+.picker_btn:before {
+	content: "\f0fe";
+	font-family: FontAwesome;
+	font-size: 35px;
+}
+
+/* layout Specific */

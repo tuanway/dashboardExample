@@ -16,7 +16,7 @@ specname:\"row\"\
 items:[
 {
 customProperties:"attributes:{\
-class:\"col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-12\"\
+class:\"col-lg-3 col-md-4 col-sm-6 col-xs-12\"\
 },\
 properties:{\
 packagename:\"12grid\",\
@@ -40,7 +40,7 @@ uuid:"2A207041-48B6-4DAC-A28D-9FD52B9B15E4"
 },
 {
 customProperties:"attributes:{\
-class:\"col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-12\"\
+class:\"col-lg-3 col-md-4 col-sm-6 col-xs-12\"\
 },\
 properties:{\
 packagename:\"12grid\",\
@@ -64,7 +64,7 @@ uuid:"36A6959D-A6CA-4B97-BBC9-A7804ADBB5FE"
 },
 {
 customProperties:"attributes:{\
-class:\"col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-12\"\
+class:\"col-lg-3 col-md-4 col-sm-6 col-xs-12\"\
 },\
 properties:{\
 packagename:\"12grid\",\
@@ -88,7 +88,7 @@ uuid:"5828D47F-7643-4AE4-A8DB-90DC83D7DB55"
 },
 {
 customProperties:"attributes:{\
-class:\"col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-12\"\
+class:\"col-lg-3 col-md-4 col-sm-6 col-xs-12\"\
 },\
 properties:{\
 packagename:\"12grid\",\
@@ -112,7 +112,7 @@ uuid:"5844B13A-31FD-443B-ACCB-7866601C37B6"
 },
 {
 customProperties:"attributes:{\
-class:\"col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-12\"\
+class:\"col-lg-3 col-md-4 col-sm-6 col-xs-12\"\
 },\
 properties:{\
 packagename:\"12grid\",\
@@ -136,7 +136,7 @@ uuid:"5BE01B2A-013F-4486-A088-138D2257ED86"
 },
 {
 customProperties:"attributes:{\
-class:\"col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-12\"\
+class:\"col-lg-3 col-md-4 col-sm-6 col-xs-12\"\
 },\
 properties:{\
 packagename:\"12grid\",\
@@ -160,7 +160,7 @@ uuid:"614C2F9D-2622-4D49-B6CA-499238AD1CF2"
 },
 {
 customProperties:"attributes:{\
-class:\"col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-12\"\
+class:\"col-lg-3 col-md-4 col-sm-6 col-xs-12\"\
 },\
 properties:{\
 packagename:\"12grid\",\
@@ -184,7 +184,7 @@ uuid:"68B7B597-DE40-4646-B9A0-904C5029EA76"
 },
 {
 customProperties:"attributes:{\
-class:\"col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-12\"\
+class:\"col-lg-3 col-md-4 col-sm-6 col-xs-12\"\
 },\
 properties:{\
 packagename:\"12grid\",\
@@ -208,7 +208,7 @@ uuid:"862A2280-23D1-46B3-8C5B-FC35FCD31651"
 },
 {
 customProperties:"attributes:{\
-class:\"col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-12\"\
+class:\"col-lg-3 col-md-4 col-sm-6 col-xs-12\"\
 },\
 properties:{\
 packagename:\"12grid\",\
@@ -232,7 +232,7 @@ uuid:"867A4CEB-8E74-4A26-A562-FA3B351470A4"
 },
 {
 customProperties:"attributes:{\
-class:\"col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-12\"\
+class:\"col-lg-3 col-md-4 col-sm-6 col-xs-12\"\
 },\
 properties:{\
 packagename:\"12grid\",\
@@ -256,7 +256,7 @@ uuid:"B0115217-4D6B-4E93-84B3-32983C10BDE5"
 },
 {
 customProperties:"attributes:{\
-class:\"col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-12\"\
+class:\"col-lg-3 col-md-4 col-sm-6 col-xs-12\"\
 },\
 properties:{\
 packagename:\"12grid\",\
@@ -280,7 +280,7 @@ uuid:"B84F4075-3F64-49D7-AA0A-2131AC3789B2"
 },
 {
 customProperties:"attributes:{\
-class:\"col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-12\"\
+class:\"col-lg-3 col-md-4 col-sm-6 col-xs-12\"\
 },\
 properties:{\
 packagename:\"12grid\",\
@@ -304,7 +304,7 @@ uuid:"B8B2D39E-663C-4F28-B2E1-CA485C6D5C15"
 },
 {
 customProperties:"attributes:{\
-class:\"col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-12\"\
+class:\"col-lg-3 col-md-4 col-sm-6 col-xs-12\"\
 },\
 properties:{\
 packagename:\"12grid\",\
@@ -328,7 +328,7 @@ uuid:"D752BCBA-7998-4E41-BDF4-C5345908CEC8"
 },
 {
 customProperties:"attributes:{\
-class:\"col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-12\"\
+class:\"col-lg-3 col-md-4 col-sm-6 col-xs-12\"\
 },\
 properties:{\
 packagename:\"12grid\",\
@@ -352,7 +352,7 @@ uuid:"D8657962-43CD-46CA-AA14-771E75E2AB82"
 },
 {
 customProperties:"attributes:{\
-class:\"col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-12\"\
+class:\"col-lg-3 col-md-4 col-sm-6 col-xs-12\"\
 },\
 properties:{\
 packagename:\"12grid\",\

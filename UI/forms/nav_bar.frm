@@ -46,32 +46,18 @@ location:{
 x:418,
 y:7
 },
-menuItems:[
-{
-iconName:"fa fa-desktop",
-itemId:"app_settings",
-onAction:"31897363-A857-4139-A7AF-EF29FAB391DC",
-svyUUID:"B10B9DB5-B6D8-4CD6-A3ED-A730BB9B47D4",
-text:"Application Settings"
-},
-{
-iconName:"fa fa-sign-out",
-itemId:"sign_out",
-onAction:"31897363-A857-4139-A7AF-EF29FAB391DC",
-svyUUID:"BDC2DE12-E3A5-4CC3-8EFB-DC2B8C6580DC",
-text:"Log out"
-}
-],
 onMenuItemSelected:"1CCB4805-470F-4A68-8A30-0C5E1E030F2D",
 size:{
 height:27,
 width:41
 },
+styleClass:"settings_group_btn",
 text:" "
 },
 location:"418,7",
 name:"settings_btn",
 size:"41,27",
+styleClass:"settings_group_btn",
 typeName:"bootstrapextracomponents-dropdown",
 typeid:47,
 uuid:"D19CA41E-4219-4C7C-A089-97913DCA60A7"

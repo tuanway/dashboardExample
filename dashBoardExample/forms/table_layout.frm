@@ -17,20 +17,21 @@ y:0
 },
 onActionMethodID:"EFC2D52C-9D0D-4C21-BA2E-AB7C40D0CB05",
 size:{
-height:50,
+height:30,
 width:276
 },
-text:"<h3>Table Name<\/h3>"
+styleClass:"table_title",
+text:"Table Name"
 },
 location:"0,0",
-name:"label_405",
-size:"276,50",
+name:"title",
+size:"276,30",
 typeName:"bootstrapcomponents-label",
 typeid:47,
 uuid:"7A71C85F-185F-46A6-B723-12E0D2AA1C7E"
 },
 {
-height:55,
+height:39,
 partType:1,
 typeid:19,
 uuid:"7D174CAF-31C3-4601-BD0D-65E17FF3BD46"

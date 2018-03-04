@@ -36,16 +36,10 @@ uuid:"90CA5B9E-CB18-4674-A467-FF336601034B"
 {
 extendsID:"7A71C85F-185F-46A6-B723-12E0D2AA1C7E",
 json:{
-text:"<h3>Orders<\/h3>"
+text:"Orders"
 },
 typeid:47,
 uuid:"9B864B37-F162-4745-9AB0-7EE5823E856A"
-},
-{
-extendsID:"7D174CAF-31C3-4601-BD0D-65E17FF3BD46",
-height:55,
-typeid:19,
-uuid:"9BB77726-5938-4F7A-BDBF-6CBD3EEF1E6B"
 }
 ],
 name:"orders",

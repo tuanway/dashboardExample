@@ -22,7 +22,7 @@ uuid:"712E8D67-C6B2-4C50-A471-18ABAECDA477"
 {
 extendsID:"7A71C85F-185F-46A6-B723-12E0D2AA1C7E",
 json:{
-text:"<h3>Customers<\/h3>"
+text:"Customers"
 },
 typeid:47,
 uuid:"71EF6D0C-9532-4599-9B98-83C54C8D9B53"
@@ -56,12 +56,6 @@ size:"80,20",
 text:"Country",
 typeid:7,
 uuid:"D4C24C65-248A-4780-A1BB-F22293271BF6"
-},
-{
-extendsID:"7D174CAF-31C3-4601-BD0D-65E17FF3BD46",
-height:55,
-typeid:19,
-uuid:"F54DD5B3-8D32-40A0-85FA-140E957BEC5F"
 }
 ],
 name:"customers",

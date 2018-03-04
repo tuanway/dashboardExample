@@ -52,6 +52,12 @@
 	padding: 1px;
 }
 
+.settings_group_btn>.open>.dropdown-menu>li>a:hover,.dropdown-menu>li>a:focus
+	{
+	border-bottom:1px dotted lightgray;
+	border-top:1px dotted lightgray;
+}
+
 .header {
 	border-bottom: 1px solid lightgray;
 	box-shadow: 1px 1px 10px gray;
@@ -64,7 +70,7 @@
 }
 
 input[type=text]:focus {
-	box-shadow: 0 0 3px gray;
+	box-shadow: 0 0 3px black;
 	border: 1px dotted gray;
 }
 /* top navigation bar */

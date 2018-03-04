@@ -8,7 +8,7 @@
  *
  * @properties={typeid:24,uuid:"676DB98A-B11C-49BD-93E7-274A17683BE4"}
  */
-function onShow(firstShow, event) {	
+function onShow(firstShow, event) {
 	if (firstShow) {
 		var data = {
 			type: 'pie',
@@ -39,8 +39,16 @@ function onShow(firstShow, event) {
 			},
 			responsive: false,
 			scales: {
-				xAxes: [{ stacked: true }],
-				yAxes: [{ stacked: true }]
+				xAxes: [{
+					stacked: false, ticks: {
+						display: false
+					}
+				}],
+				yAxes: [{
+					stacked: false, ticks: {
+						display: false
+					}
+				}]
 			}
 		}
 

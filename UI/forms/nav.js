@@ -12,66 +12,6 @@ var menu;
  * @SuppressWarnings(wrongparameters)
  */
 function initMenu() {
-	//create a menu for instances if we have them
-	var inst = scopes.UI.getAllInstances();
-	if (inst.length) {
-		menu.push({
-			isDivider: true
-		})
-
-		menu.push({
-			text: 'Instances:'
-		})
-
-		for (var i = 0; i < inst.length; i++) {
-			/** @type {servoyextra-sidenav.MenuItem} */
-			var menuItem = {
-				id: inst[i].getName(),
-				formName: inst[i].getName(),
-				text: inst[i].getTitle(),
-				data: { type: 'instance', text: inst[i].getTitle(), formName: inst[i].getName() },
-				menuItems: []
-			}
-
-			//if an instance has children - add them to a deeper level
-			var ch = inst[i].getChildren();
-			if (ch.length) {
-				var chMenu = {
-					id: inst[i].getName() + '_children',
-					iconStyleClass: '',
-					text: "Children",
-					data: { },
-					menuItems: []
-				}
-				for (var j = 0; j < ch.length; j++) {
-					chMenu.menuItems.push({
-						id: ch[j].getName(),
-						formName: ch[j].getName(),
-						text: ch[j].getTitle(),
-						data: { type: 'children' },
-						menuItems: [{
-							id: ch[j].getName() + '_remove',
-							iconStyleClass: 'glyphicon glyphicon-remove',
-							text: "Remove",
-							data: { type: 'remove_child', formName: ch[j].getName() }
-						}]
-					})
-				}
-				menuItem.menuItems.push(chMenu)
-			}
-
-			//add removal option for instance
-			menuItem.menuItems.push({
-				id: inst[i].getName() + '_remove',
-				iconStyleClass: 'glyphicon glyphicon-remove',
-				text: "Remove",
-				data: { type: 'remove_instance', formName: inst[i].getName() }
-			})
-
-			menu.push(menuItem)
-		}
-	}
-
 	elements.sidenav.setRootMenuItems(menu);
 }
 

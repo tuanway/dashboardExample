@@ -3,7 +3,7 @@
 }
 
 .svy-sidenav-tablesspanel {
-	padding-right:10px;
+	padding-right: 10px;
 }
 
 /* top navigation bar */
@@ -63,4 +63,8 @@
 	font-weight: bold;
 }
 
+input[type=text]:focus {
+	box-shadow: 0 0 3px gray;
+	border: 1px dotted gray;
+}
 /* top navigation bar */

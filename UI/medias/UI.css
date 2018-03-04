@@ -2,8 +2,8 @@
 	outline: none !important;
 }
 
-.svy-sidenav-tablesspanel {
-	padding-right: 10px;
+.side_nav {
+	box-shadow: 1px 1px 4px gray;
 }
 
 /* top navigation bar */
@@ -54,8 +54,8 @@
 
 .settings_group_btn>.open>.dropdown-menu>li>a:hover,.dropdown-menu>li>a:focus
 	{
-	border-bottom:1px dotted lightgray;
-	border-top:1px dotted lightgray;
+	border-bottom: 1px dotted lightgray;
+	border-top: 1px dotted lightgray;
 }
 
 .header {
@@ -69,8 +69,8 @@
 	font-weight: bold;
 }
 
-input[type=text]:focus {
-	box-shadow: 0 0 3px black;
+.search_box>input[type=text]:focus {
+	box-shadow: 1px 0px 3px 0px gray;
 	border: 1px dotted gray;
 }
 /* top navigation bar */

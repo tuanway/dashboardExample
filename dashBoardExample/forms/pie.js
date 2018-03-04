@@ -40,11 +40,17 @@ function onShow(firstShow, event) {
 			responsive: false,
 			scales: {
 				xAxes: [{
+					gridLines: {
+						display: false
+					},
 					stacked: false, ticks: {
 						display: false
 					}
 				}],
 				yAxes: [{
+					gridLines: {
+						display: false
+					},
 					stacked: false, ticks: {
 						display: false
 					}

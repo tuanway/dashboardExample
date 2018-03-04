@@ -7,7 +7,7 @@
  *
  * @properties={typeid:24,uuid:"2A552236-5C7F-4801-A93E-9B90A9909934"}
  */
-function onAction(event) {
+function onAction$add(event) {
 
 	//hide menu if it's open
 	if (forms.main.isMenuOpen()) {
@@ -24,10 +24,10 @@ function onAction(event) {
 			if (els[j].containedForm == controller.getName()) {
 				tabIndex = Number(els[j].getName().split('t')[1]);
 			}
-
 		}
 		//hide selection button
 		elements.picker_btn.visible = false;
+		elements.remove_btn.visible = true;
 		//create a child dashboard item
 		var i = new scopes.UI.Instance(c, c, tabIndex);
 		//add the child to a parent
@@ -37,4 +37,17 @@ function onAction(event) {
 
 		forms.main.initMenu();
 	}
+}
+
+/**
+ * Perform the element default action.
+ *
+ * @param {JSEvent} event the event that triggered the action
+ *
+ * @private
+ *
+ * @properties={typeid:24,uuid:"BE788310-CAF8-44AA-8CCC-F58BE650C088"}
+ */
+function onAction$remove(event) {
+	// TODO Auto-generated method stub
 }

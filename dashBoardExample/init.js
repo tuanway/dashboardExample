@@ -29,6 +29,7 @@ function onSolutionOpen(arg, queryParams) {
 						forms[layout[k].containedForm].elements.tabless.addTab(forms[ci.getName()]);
 						forms[layout[k].containedForm].elements.tabless.visible = true;
 						forms[layout[k].containedForm].elements.picker_btn.visible = false;
+						forms[layout[k].containedForm].elements.remove_btn.visible = true;
 					}
 				}
 			}

@@ -19,6 +19,7 @@
 "name":"layouts",
 "paths":[
 "/dashBoardExample/.project",
+"/dashBoardExample/forms/layout_1.frm",
 "/dashBoardExample/forms/layout_15.frm",
 "/dashBoardExample/forms/layout_21.frm"
 ]

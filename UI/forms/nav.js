@@ -13,7 +13,7 @@ var menu;
  */
 function initMenu() {
 	//create a menu for instances if we have them
-	var inst = scopes.UI.instances;
+	var inst = scopes.UI.getAllInstances();
 	if (inst.length) {
 		menu.push({
 			isDivider: true
@@ -37,7 +37,7 @@ function initMenu() {
 			var ch = inst[i].getChildren();
 			if (ch.length) {
 				var chMenu = {
-					id: inst[i].getName()+'_children',
+					id: inst[i].getName() + '_children',
 					iconStyleClass: '',
 					text: "Children",
 					data: { },
@@ -50,10 +50,10 @@ function initMenu() {
 						text: ch[j].getTitle(),
 						data: { type: 'children' },
 						menuItems: [{
-							id: 'remove_item',
+							id: ch[j].getName() + '_remove',
 							iconStyleClass: 'glyphicon glyphicon-remove',
 							text: "Remove",
-							data: { type: 'remove_instance', formName: ch[j].getName() }
+							data: { type: 'remove_child', formName: ch[j].getName() }
 						}]
 					})
 				}
@@ -62,14 +62,13 @@ function initMenu() {
 
 			//add removal option for instance
 			menuItem.menuItems.push({
-				id: 'remove',
+				id: inst[i].getName() + '_remove',
 				iconStyleClass: 'glyphicon glyphicon-remove',
 				text: "Remove",
 				data: { type: 'remove_instance', formName: inst[i].getName() }
 			})
 
-			if (!inst[i].parent)
-				menu.push(menuItem)
+			menu.push(menuItem)
 		}
 	}
 

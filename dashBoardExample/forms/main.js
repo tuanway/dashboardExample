@@ -64,7 +64,9 @@ function onMenuItemSelected(menuItemId, event) {
 		break;
 	case 'remove_instance':
 		var s = plugins.dialogs.showQuestionDialog('INFO', 'Remove Instance?', 'Yes', 'No')
-		if (!s || s == 'No') return;
+		if (!s || s == 'No') {
+			return;
+		}
 		scopes.UI.removeInstance(item.data['formName'])
 		//update side navigation
 		initMenu();
@@ -74,4 +76,5 @@ function onMenuItemSelected(menuItemId, event) {
 	default:
 		break;
 	}
+
 }

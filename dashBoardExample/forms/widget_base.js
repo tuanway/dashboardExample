@@ -22,7 +22,7 @@ function onAction(event) {
 		var tabIndex = 0;
 		for (var j = 0; j < els.length; j++) {
 			if (els[j].containedForm == controller.getName()) {
-				tabIndex = j;
+				tabIndex = Number(els[j].getName().split('t')[1]);
 			}
 
 		}
@@ -34,6 +34,7 @@ function onAction(event) {
 		p.addChild(i);
 		elements.tabless.addTab(forms[i.getName()])
 		elements.tabless.visible = true;
+
 		forms.main.initMenu();
 	}
 }

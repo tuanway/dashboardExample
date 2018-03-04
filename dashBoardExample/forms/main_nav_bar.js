@@ -39,7 +39,7 @@ function initSettingsMenu() {
  */
 function onMenuItemSelected(event, menuItem) {
 	switch (menuItem.itemId) {
-	case 'log_out':		
+	case 'log_out':
 		//save dashboard data to localstorage
 
 		var ins = scopes.UI.getAllInstances();
@@ -68,10 +68,10 @@ function onMenuItemSelected(event, menuItem) {
 
 		}
 
-		var val = plugins.serialize.toJSON(data)
-		plugins.webstorageLocalstorage.setItem('dashboard', val)
-		
-		plugins.dialogs.showInfoDialog('INFO','logging out.')
+		var val = plugins.serialize.toJSON(data);
+		plugins.webstorageLocalstorage.setItem('dashboard', val);
+		plugins.dialogs.showInfoDialog('INFO', 'logging out.');
+		application.closeSolution();
 		break;
 
 	default:

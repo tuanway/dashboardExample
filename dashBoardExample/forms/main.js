@@ -74,7 +74,7 @@ function initMenu() {
 							id: ch[j].getName() + '_remove',
 							iconStyleClass: 'glyphicon glyphicon-remove',
 							text: "Remove",
-							data: { type: 'remove_child', formName: ch[j].getName() }
+							data: { type: 'remove_child', formName: ch[j].getName(), parentFormName: inst[i].getName(), tabIndex: ch[j].getTabIndex() }
 						}]
 					})
 				}
@@ -134,6 +134,20 @@ function onMenuItemSelected(menuItemId, event) {
 		initMenu();
 		elements.sidenav.containedForm = forms.base;
 		selectMenuItem('dashboard')
+		break;
+
+	case 'remove_child':
+		s = plugins.dialogs.showQuestionDialog('INFO', 'Remove Child?', 'Yes', 'No')
+		if (!s || s == 'No') {
+			return;
+		}
+		scopes.UI.removeChildInstance(item.data['parentFormName'], item.data['formName']);
+		//remove instance from actual form
+		var layout = scopes.UI.getInstanceLayout(scopes.UI.getInstance(item.data['parentFormName']));
+		forms[layout[item.data['tabIndex']].containedForm].elements.tabless.removeAllTabs();
+		forms[layout[item.data['tabIndex']].containedForm].elements.picker_btn.visible = true;
+		//update side navigation
+		initMenu();
 		break;
 	default:
 		break;

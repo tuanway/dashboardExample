@@ -41,7 +41,6 @@ function onMenuItemSelected(event, menuItem) {
 	switch (menuItem.itemId) {
 	case 'log_out':
 		//save dashboard data to localstorage
-
 		var ins = scopes.UI.getAllInstances();
 		var data = [];
 		for (var i = 0; i < ins.length; i++) {

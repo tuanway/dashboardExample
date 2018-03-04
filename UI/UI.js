@@ -142,6 +142,7 @@ function Instance(title, f, tabIndex) {
 /**
  * Setup a Layout for a form instance
  * @param {Instance} ins
+ * @return {elements}
  * @properties={typeid:24,uuid:"697E6426-39FB-40BF-A936-D910CB980D6C"}
  */
 function setupInstanceLayout(ins) {
@@ -160,6 +161,7 @@ function setupInstanceLayout(ins) {
 /**
  * Get a Layout for a form instance
  * @param {Instance} ins
+ * @return {elements}
  * @properties={typeid:24,uuid:"6F823A42-17E7-4A8E-8B05-0DA5D621282D"}
  */
 function getInstanceLayout(ins) {

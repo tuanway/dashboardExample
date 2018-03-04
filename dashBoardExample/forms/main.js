@@ -144,8 +144,12 @@ function onMenuItemSelected(menuItemId, event) {
 		scopes.UI.removeChildInstance(item.data['parentFormName'], item.data['formName']);
 		//remove instance from actual form
 		var layout = scopes.UI.getInstanceLayout(scopes.UI.getInstance(item.data['parentFormName']));
-		forms[layout[item.data['tabIndex']].containedForm].elements.tabless.removeAllTabs();
-		forms[layout[item.data['tabIndex']].containedForm].elements.picker_btn.visible = true;
+		for (var k = 0; k < layout.length; k++) {
+			if (layout[k].getName() == 't' + item.data['tabIndex']) {
+				forms[layout[k].containedForm].elements.tabless.removeAllTabs();
+				forms[layout[k].containedForm].elements.picker_btn.visible = true;
+			}
+		}
 		//update side navigation
 		initMenu();
 		break;

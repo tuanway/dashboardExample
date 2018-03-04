@@ -39,5 +39,6 @@ uuid:"7D174CAF-31C3-4601-BD0D-65E17FF3BD46"
 ],
 name:"table_layout",
 size:"276,223",
+styleClass:"table_layout",
 typeid:3,
 uuid:"5BD28B27-46CC-427E-B8FF-31598DA4CE81"

@@ -54,40 +54,47 @@ function initMenu() {
 				menuItems: []
 			}
 
-			//if an instance has children - add them to a deeper level
-			var ch = inst[i].getChildren();
-			if (ch.length) {
-				var chMenu = {
-					id: inst[i].getName() + '_children',
-					iconStyleClass: '',
-					text: "Children",
-					data: { },
-					menuItems: []
-				}
-				for (var j = 0; j < ch.length; j++) {
-					chMenu.menuItems.push({
-						id: ch[j].getName(),
-						formName: ch[j].getName(),
-						text: ch[j].getTitle(),
-						data: { type: 'children' },
-						menuItems: [{
-							id: ch[j].getName() + '_remove',
-							iconStyleClass: 'glyphicon glyphicon-remove',
-							text: "Remove",
-							data: { type: 'remove_child', formName: ch[j].getName(), parentFormName: inst[i].getName(), tabIndex: ch[j].getTabIndex() }
-						}]
-					})
-				}
-				menuItem.menuItems.push(chMenu)
-			}
+			//			//if an instance has children - add them to a deeper level
+			//			var ch = inst[i].getChildren();
+			//			if (ch.length) {
+			//				var chMenu = {
+			//					id: inst[i].getName() + '_children',
+			//					iconStyleClass: '',
+			//					text: "Children",
+			//					data: { },
+			//					menuItems: []
+			//				}
+			//				for (var j = 0; j < ch.length; j++) {
+			//					chMenu.menuItems.push({
+			//						id: ch[j].getName(),
+			//						formName: ch[j].getName(),
+			//						text: ch[j].getTitle(),
+			//						data: { type: 'children' },
+			//						menuItems: [{
+			//							id: ch[j].getName() + '_remove',
+			//							iconStyleClass: 'glyphicon glyphicon-remove',
+			//							text: "Remove",
+			//							data: { type: 'remove_child', formName: ch[j].getName(), parentFormName: inst[i].getName(), tabIndex: ch[j].getTabIndex() }
+			//						}]
+			//					})
+			//				}
+			//				menuItem.menuItems.push(chMenu)
+			//			}
 
 			//add removal option for instance
 			menuItem.menuItems.push({
-				id: inst[i].getName() + '_remove',
-				iconStyleClass: 'glyphicon glyphicon-remove',
-				text: "Remove",
-				data: { type: 'remove_instance', formName: inst[i].getName() }
-			})
+				id: inst[i].getName() + '_configure',
+				iconStyleClass: 'glyphicon glyphicon-cog',
+				text: "Configure",
+				data: { },
+				menuItems: [{
+					id: inst[i].getName() + '_remove',
+					iconStyleClass: 'glyphicon glyphicon-remove',
+					text: "Remove",
+					data: { type: 'remove_instance', formName: inst[i].getName() }
+				}]
+			}
+			)
 
 			menu.push(menuItem)
 		}

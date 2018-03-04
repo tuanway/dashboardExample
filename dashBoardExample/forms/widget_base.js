@@ -49,5 +49,19 @@ function onAction$add(event) {
  * @properties={typeid:24,uuid:"BE788310-CAF8-44AA-8CCC-F58BE650C088"}
  */
 function onAction$remove(event) {
-	// TODO Auto-generated method stub
+	//	var s = plugins.dialogs.showQuestionDialog('INFO', 'Remove Child?', 'Yes', 'No')
+	//	if (!s || s == 'No') {
+	//		return;
+	//	}
+	//get parent form
+	var p = scopes.UI.getInstance(scopes.svyNavigation.getCurrentItem().getFormName());
+	//get child form
+	var c = elements.tabless.getTabFormNameAt(1);
+	p.removeChild(c);
+
+	//update UI
+	elements.tabless.removeAllTabs();
+	elements.picker_btn.visible = true;
+	elements.remove_btn.visible = false;
+	forms.main.initMenu();
 }

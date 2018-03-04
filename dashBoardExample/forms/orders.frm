@@ -43,6 +43,7 @@ uuid:"9B864B37-F162-4745-9AB0-7EE5823E856A"
 }
 ],
 name:"orders",
+scrollbars:33,
 typeid:3,
 uuid:"9543C3C4-0C10-47BF-9E7E-25D9F7C193FD",
 view:3

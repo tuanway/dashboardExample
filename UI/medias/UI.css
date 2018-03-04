@@ -2,10 +2,20 @@
 	outline: none !important;
 }
 
+.svy-sidenav-tablesspanel {
+	padding-right:10px;
+}
+
 /* top navigation bar */
 .menu_btn,.search_btn,.settings_btn {
 	border: 1px solid lightgray;
 	background-color: transparent;
+}
+
+.menu_btn:hover,.search_btn:hover,.settings_btn:hover {
+	border: 1px dotted gray;
+	color: #333;
+	background-color: #e6e6e6;
 }
 
 .menu_btn:focus,.search_btn:focus,.settings_btn:focus {
@@ -15,6 +25,7 @@
 }
 
 .settings_btn {
+	height: 34px;
 	border: none;
 }
 

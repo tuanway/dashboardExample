@@ -21,7 +21,7 @@ function initSettingsMenu() {
 		itemId: 'app_settings',
 		enabled: true,
 		iconName: 'fa fa-desktop',
-		text: 'Application Settings'
+		text: 'System Settings'
 	}, {
 		itemId: 'log_out',
 		enabled: true,

@@ -131,11 +131,24 @@ function Instance(title, f, tabIndex) {
 
 	/**
 	 * @public
-	 * Setup a Layout for a form instance
+	 * Add a child to instance
 	 * @param {Instance} i
 	 */
 	this.addChild = function(i) {
 		this.children.push(i);
+	}
+
+	/**
+	 * @public
+	 * Remove a child from instance
+	 * @param {String} name name of instance
+	 */
+	this.removeChild = function(name) {
+		for (var i = 0; i < this.children.length; i++) {
+			if (this.children[i].getName() == name) {
+				this.children.splice(i, 1);
+			}
+		}
 	}
 }
 
@@ -240,7 +253,8 @@ function removeChildInstance(parent, child) {
 	var children = ins.getChildren()
 	for (var i = 0; i < children.length; i++) {
 		if (children[i].getName() == child) {
-			children.splice(i, 1)
+			application.output(children[i].getName() + '|' + child)
+			children.splice(i, 1);
 			return;
 		}
 

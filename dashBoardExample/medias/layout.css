@@ -4,6 +4,10 @@
 );
 /* layout Specific */
 .layout_15,.layout_21,.layout_1 {
+	border-radius: 10px;
+	margin-top: 5px;
+	margin-left: 5px;
+	margin-bottom: 5px;	
 	border: 1px dotted lightgray;
 	width: 100%;
 }
@@ -14,26 +18,41 @@
 }
 
 .layout_15 {
+	width: 97%;
 	height: 300px;
 }
 
 .layout_21 {
+	width: 99%;
 	height: 450px;
 }
 
+.table_layout {
+	margin:2px;
+}
+
 .table_title {
-	font-weight: bold;
+	color: gray; font-weight : bold;
 	font-size: 25px;
+	font-weight: bold;
 }
 
 .remove_btn {
-	border: 1px dotted gray;
-	border-radius: 15px;
+	border: none;
+	border-radius: 10px;
 	color: gray;
 }
 
+.remove_btn:hover {
+	border: 1px dotted gray;
+	border-radius: 10px;
+	color: gray;
+	background-color: #e6e6e6;
+	border-color: #adadad;
+}
+
 .remove_btn:before {
-	content: "\f127";
+	content: "\f00d";
 	font-family: FontAwesome;
 }
 

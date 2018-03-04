@@ -41,7 +41,7 @@ function onShow(firstShow, event) {
 			scales: {
 				xAxes: [{
 					gridLines: {
-						display: false
+						display: true
 					},
 					stacked: false, ticks: {
 						display: false
@@ -49,7 +49,7 @@ function onShow(firstShow, event) {
 				}],
 				yAxes: [{
 					gridLines: {
-						display: false
+						display: true
 					},
 					stacked: false, ticks: {
 						display: false

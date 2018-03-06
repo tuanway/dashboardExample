@@ -16,17 +16,17 @@ function initMenu() {
 			menuItems: [{
 				id: 'layout_15',
 				iconStyleClass: 'glyphicon glyphicon-th',
-				text: "Layout Type (15)",
+				text: "Layout(15)",
 				data: { type: 'dashboard', formName: 'layout_15' }
 			}, {
 				id: 'layout_21',
 				iconStyleClass: 'glyphicon glyphicon-th-large',
-				text: "Layout Type (2x1)",
+				text: "Layout(2x1)",
 				data: { type: 'dashboard', formName: 'layout_21' }
 			}, {
 				id: 'layout_1',
 				iconStyleClass: 'glyphicon glyphicon-unchecked',
-				text: "Layout Type (1)",
+				text: "Layout(1)",
 				data: { type: 'dashboard', formName: 'layout_1' }
 			}]
 		},
@@ -123,7 +123,11 @@ function onMenuItemSelected(menuItemId, event) {
 		break;
 	case 'dashboard':
 		//create a new instance of a dashboard
-		var i = new scopes.UI.Instance(item.text, item.data['formName']);
+		var insName = plugins.dialogs.showInputDialog('INFO', 'What do you want to call this instance?', '')
+		if (!insName) {
+			insName = item.text
+		}
+		var i = new scopes.UI.Instance(insName, item.data['formName']);
 		scopes.UI.storeInstance(i);
 		//setup a layout
 		scopes.UI.setupInstanceLayout(i);

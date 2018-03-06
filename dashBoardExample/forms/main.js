@@ -41,7 +41,8 @@ function initMenu() {
 		})
 
 		menu.push({
-			text: 'Instances:'
+			text: 'Instances',
+			iconStyleClass: 'glyphicon glyphicon-flash'
 		})
 
 		for (var i = 0; i < inst.length; i++) {

@@ -15,7 +15,7 @@ function initSettingsMenu() {
 	settings_items = [{
 		itemId: 'profile',
 		enabled: true,
-		iconName: 'fa fa-user',
+		iconName: 'glyphicon glyphicon-user',
 		text: 'User Profile'
 	}, {
 		itemId: 'app_settings',

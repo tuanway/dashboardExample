@@ -4,6 +4,8 @@
 	<comment></comment>
 	<projects>
 		<project>resources</project>
+		<project>fastclick</project>
+		<project>metatag</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

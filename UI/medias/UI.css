@@ -39,9 +39,13 @@
 }
 
 /* target mobile screens*/
-
 .side_nav {
 	box-shadow: 1px 1px 4px gray;
+}
+
+/* enable fast scroll for ios*/
+.svy-sidenav-tablesspanel{
+	-webkit-overflow-scrolling: touch;
 }
 
 /* top navigation bar */

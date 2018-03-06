@@ -291,5 +291,8 @@ function getChildInstance(parent, child) {
  * @properties={typeid:24,uuid:"4A7F84EC-E40D-4839-A241-3726A96FC2EC"}
  */
 function onSolutionOpen(arg, queryParams) {
-	plugins.ngclientutils.setViewportMetaForMobileAwareSites(plugins.ngclientutils.VIEWPORT_MOBILE_DENY_ZOOM)
+	plugins.fastclickFastclick.init();
+	plugins.metatagTag.initWebApp();
+	plugins.ngclientutils.setViewportMetaForMobileAwareSites(plugins.ngclientutils.VIEWPORT_MOBILE_DENY_ZOOM);
+	
 }

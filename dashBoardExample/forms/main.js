@@ -124,8 +124,8 @@ function onMenuItemSelected(menuItemId, event) {
 	case 'dashboard':
 		//create a new instance of a dashboard
 		var insName = plugins.dialogs.showInputDialog('INFO', 'What do you want to call this instance?', '')
-		if (!insName) {
-			insName = item.text
+		if (!insName || insName == '') {
+			return;
 		}
 		var i = new scopes.UI.Instance(insName, item.data['formName']);
 		scopes.UI.storeInstance(i);

@@ -1,4 +1,11 @@
 /**
+ * @type {Number}
+ *
+ * @properties={typeid:35,uuid:"548B7DDA-C26D-40AE-9367-BE094AD44DAA",variableType:4}
+ */
+var screenWidth = 0;
+
+/**
  * @protected
  * @type {Array<Instance>}
  * @properties={typeid:35,uuid:"9C17C1CD-FF0C-4644-A5AD-B6B45356DECD",variableType:-4}
@@ -290,9 +297,8 @@ function getChildInstance(parent, child) {
  *
  * @properties={typeid:24,uuid:"4A7F84EC-E40D-4839-A241-3726A96FC2EC"}
  */
-function onSolutionOpen(arg, queryParams) {
+function onSolutionOpen(arg, queryParams) {	
 	plugins.fastclickFastclick.init();
 	plugins.metatagTag.initWebApp();
 	plugins.ngclientutils.setViewportMetaForMobileAwareSites(plugins.ngclientutils.VIEWPORT_MOBILE_DENY_ZOOM);
-	
 }

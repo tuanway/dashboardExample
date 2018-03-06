@@ -48,6 +48,7 @@ function initMenu() {
 			/** @type {servoyextra-sidenav.MenuItem} */
 			var menuItem = {
 				id: inst[i].getName(),
+				iconStyleClass: 'glyphicon glyphicon-leaf',
 				formName: inst[i].getName(),
 				text: inst[i].getTitle(),
 				data: { type: 'instance', text: inst[i].getTitle(), formName: inst[i].getName() },

@@ -36,6 +36,21 @@ function selectMenuItem(id) {
 }
 
 /**
+ * @properties={typeid:24,uuid:"ACA55585-0F3E-43B7-AF65-C41E5067B3B2"}
+ */
+function fcb(h, d) {
+	scopes.UI.screenWidth = d[5].value[0];
+	if (scopes.UI.screenWidth <= 700) {
+		var f = solutionModel.getForm(controller.getName())
+		var c = f.getWebComponent('sidenav')
+		c.setJSONProperty('slideAnimation', 'slide-menu')
+		controller.recreateUI();
+	}
+	initMenu();
+	scopes.svyNavigation.addNavigationListener(onNavigation);
+}
+
+/**
  * Callback method when form is (re)loaded.
  *
  * @param {JSEvent} event the event that triggered the action
@@ -45,8 +60,7 @@ function selectMenuItem(id) {
  * @properties={typeid:24,uuid:"115FCFCA-7750-4F82-9808-56635C9998C9"}
  */
 function onLoad(event) {
-	initMenu();
-	scopes.svyNavigation.addNavigationListener(onNavigation);
+	plugins.svyfingerprintFingerprint.getFingerPrint(fcb)
 }
 
 /**

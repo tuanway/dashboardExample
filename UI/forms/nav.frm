@@ -74,6 +74,7 @@ size:{
 height:497,
 width:301
 },
+slideAnimation:"collapse-menu",
 togglePosition:"hide-toggle"
 },
 location:"0,49",

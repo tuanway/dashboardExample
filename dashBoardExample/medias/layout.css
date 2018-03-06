@@ -80,3 +80,25 @@
 }
 
 /* layout Specific */
+
+/* Tab Panel Plus */
+.tab_panel {
+	color: black !important;
+}
+/*Selected Tab*/
+.tab_panel>.nav-tabs>li.active>a,.nav-tabs>li.active>a:hover,.nav-tabs>li.active>a:focus
+	{
+	color: black !important;
+}
+
+.tab_panel>.nav-tabs>li>a {
+	color: black !important;
+}
+
+.tab_panel_close:before {
+	color: black;
+	content: '\f00d';
+	font-family: FontAwesome;
+}
+
+/* Tab Panel Plus */

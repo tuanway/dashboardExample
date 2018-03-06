@@ -3,8 +3,12 @@ extendsID:"4B939134-7322-4178-88E3-5ABF3A33B03F",
 items:[
 {
 anchors:15,
+foreground:"java.awt.Color[r=0,g=0,b=0]",
 json:{
 anchors:15,
+closeIconStyleClass:"tab_panel_close",
+foreground:"#000000",
+horizontalAlignment:0,
 location:{
 x:0,
 y:0

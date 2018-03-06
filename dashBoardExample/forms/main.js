@@ -99,7 +99,6 @@ function initMenu() {
 			menu.push(menuItem)
 		}
 	}
-
 	return _super.initMenu.apply(this, arguments);
 
 }

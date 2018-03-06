@@ -12,6 +12,9 @@ var menu;
  * @SuppressWarnings(wrongparameters)
  */
 function initMenu() {
+	menu.push({
+		styleClass: 'footer'
+	})
 	elements.sidenav.setRootMenuItems(menu);
 }
 

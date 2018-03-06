@@ -16,12 +16,12 @@ function initSettingsMenu() {
 		itemId: 'profile',
 		enabled: true,
 		iconName: 'fa fa-user',
-		text: 'Tuan Nguyen'
+		text: 'User Profile'
 	}, {
 		itemId: 'app_settings',
 		enabled: true,
 		iconName: 'fa fa-desktop',
-		text: 'System Settings'
+		text: 'Application Settings'
 	}, {
 		itemId: 'log_out',
 		enabled: true,

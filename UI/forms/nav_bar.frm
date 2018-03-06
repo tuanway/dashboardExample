@@ -26,7 +26,7 @@ displaysTags:true,
 location:"42,8",
 name:"brand_text",
 size:"99,30",
-text:"<h4><b>SERVOY<\/b><\/h4>",
+styleClass:"logo",
 transparent:true,
 typeid:7,
 uuid:"A91FC151-AAC1-46A7-AA2C-1FA70CC437AA"
@@ -57,7 +57,6 @@ text:" "
 location:"418,7",
 name:"settings_btn",
 size:"41,27",
-styleClass:"settings_group_btn",
 typeName:"bootstrapextracomponents-dropdown",
 typeid:47,
 uuid:"D19CA41E-4219-4C7C-A089-97913DCA60A7"

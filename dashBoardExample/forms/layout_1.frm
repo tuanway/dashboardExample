@@ -30,5 +30,6 @@ uuid:"EE695359-CD5C-4C79-BABB-A4AB3B450E19"
 ],
 name:"layout_1",
 size:"101,103",
+styleClass:"layout_1",
 typeid:3,
 uuid:"1D1E8F16-2DA3-4E48-9D00-169E1D18B6E4"

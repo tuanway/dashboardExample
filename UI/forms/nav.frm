@@ -74,7 +74,6 @@ size:{
 height:497,
 width:301
 },
-styleClass:"side_nav",
 togglePosition:"hide-toggle"
 },
 location:"0,49",

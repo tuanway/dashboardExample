@@ -3,18 +3,28 @@
 'UI.css'
 );
 /* layout Specific */
-.layout_15,.layout_21,.layout_1 {
+.layout_15,.layout_21 {
 	border-radius: 10px;
 	margin-top: 5px;
 	margin-left: 5px;
-	margin-bottom: 5px;	
+	margin-bottom: 5px;
 	border: 1px dotted lightgray;
 	width: 100%;
 }
 
 .layout_1 {
-	width: 100vw;
-	height: 100vh;
+	height: 95%;
+}
+
+/*mobile layout properties*/
+@media only screen and (max-width: 500px) {
+	.layout_1 {
+		height: 100%;
+	}
+	.layout_21 {
+		width: 98.5%;
+		height: 300px;
+	}
 }
 
 .layout_15 {
@@ -24,15 +34,16 @@
 
 .layout_21 {
 	width: 98.5%;
-	height: 450px;
+	height: 42vh;
 }
 
 .table_layout {
-	margin:2px;
+	margin: 2px;
 }
 
 .table_title {
-	color: gray; font-weight : bold;
+	color: gray;
+	font-weight: bold;
 	font-size: 25px;
 	font-weight: bold;
 }

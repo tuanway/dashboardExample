@@ -35,9 +35,9 @@ uuid:"5F29167C-3BC2-4343-A359-94331F4CCC73"
 {
 anchors:3,
 displaysTags:true,
-location:"279,7",
+location:"278,7",
 name:"brand_text",
-size:"84,30",
+size:"87,30",
 styleClass:"brand_text",
 text:"Powered by",
 transparent:true,

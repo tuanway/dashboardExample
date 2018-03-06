@@ -2,6 +2,11 @@
 	outline: none !important;
 }
 
+html {
+    /* enough space to scroll up to get fullscreen on iOS8 */
+    padding-bottom: 300px;
+}
+
 /*Add Logo*/
 .logo,.logo_bot {
 	content:

@@ -80,7 +80,6 @@ togglePosition:"hide-toggle"
 location:"0,49",
 name:"sidenav",
 size:"301,497",
-styleClass:"side_nav",
 typeName:"servoyextra-sidenav",
 typeid:47,
 uuid:"D59DD2C5-D13B-4A52-8C4D-A78AE9195A73"

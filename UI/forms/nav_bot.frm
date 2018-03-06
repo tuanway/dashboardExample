@@ -5,7 +5,7 @@ items:[
 {
 anchors:3,
 displaysTags:true,
-location:"368,3",
+location:"348,3",
 name:"brand_logo",
 size:"99,30",
 styleClass:"logo_bot",
@@ -35,7 +35,7 @@ uuid:"5F29167C-3BC2-4343-A359-94331F4CCC73"
 {
 anchors:3,
 displaysTags:true,
-location:"278,2",
+location:"258,2",
 name:"brand_text",
 size:"87,30",
 styleClass:"brand_text",

@@ -14,7 +14,7 @@ function onAction$add(event) {
 		forms.main.openMenu(event);
 	}
 	//choose a widget to display
-	var c = plugins.dialogs.showSelectDialog('Choose Widget', 'Choose a widget to create', 'customers', 'orders', 'pie', 'bar', 'line');
+	var c = plugins.dialogs.showSelectDialog('Choose Widget', 'Choose a widget to create', 'customersOrders', 'customers', 'orders', 'pie', 'bar', 'line');
 	//get parent layout
 	var p = scopes.UI.getInstance(scopes.svyNavigation.getCurrentItem().getFormName());
 	if (c) {

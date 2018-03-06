@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: tabpanelplus
+Bundle-Name: TabPanel Plus
+Bundle-Version: 1.0.1
+Package-Type: Web-Component
+
+Name: tabpanel/tabpanel.spec
+Web-Component: True
+

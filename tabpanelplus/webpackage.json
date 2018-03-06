@@ -1,0 +1,13 @@
+{
+    "name":"tabpanelplus",
+    "displayName":"Enhanced TabPanel for Servoy",
+    "packageType": "Web-Component",
+    "icon": "https://image.freepik.com/free-icon/tabs-panel-of-grouped-windows_318-48289.jpg",
+    "description": "A tablpanel with advanced features like 'x' close button",
+    "wikiUrl": "https://github.com/Servoy/svyTabPanelPlus/wiki",
+    "sourceUrl" : "https://github.com/Servoy/svyTabPanelPlus",
+    "releases" : [{
+	    	"version":"1.0.0",
+	    	"url":"https://github.com/Servoy/svyTabPanelPlus/releases/download/v1.0.0/tabpanelplus.zip"}
+    	]
+}

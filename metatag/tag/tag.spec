@@ -21,6 +21,14 @@
 			[
 				
 			]
+		},
+
+		"getDeviceWidth": 
+		{
+			"parameters": 
+			[
+				
+			]
 		}
 	}
 }

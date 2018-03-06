@@ -40,16 +40,16 @@ anchors:14,
 items:[
 {
 containsFormID:"F6EF84DC-3C23-462A-AAE3-9F1637FD0EDF",
-location:"9,512",
+location:"9,522",
 text:"nav_bot",
 typeid:15,
 uuid:"B7C3A473-2D32-46A6-936E-FBADB7B9EB89"
 }
 ],
-location:"0,498",
+location:"0,508",
 name:"tablessc",
 printable:false,
-size:"302,49",
+size:"302,39",
 styleClass:"header",
 tabOrientation:-1,
 transparent:true,
@@ -71,7 +71,7 @@ onMenuItemSelected:"B6DDCAA3-04E9-43BA-A850-9FF997519F2B",
 responsiveHeight:300,
 sidenavWidth:200,
 size:{
-height:447,
+height:457,
 width:301
 },
 styleClass:"side_nav",
@@ -79,7 +79,7 @@ togglePosition:"hide-toggle"
 },
 location:"0,49",
 name:"sidenav",
-size:"301,447",
+size:"301,457",
 typeName:"servoyextra-sidenav",
 typeid:47,
 uuid:"D59DD2C5-D13B-4A52-8C4D-A78AE9195A73"

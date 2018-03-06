@@ -5,7 +5,7 @@ items:[
 {
 anchors:3,
 displaysTags:true,
-location:"368,8",
+location:"368,3",
 name:"brand_logo",
 size:"99,30",
 styleClass:"logo_bot",
@@ -27,7 +27,7 @@ typeid:7,
 uuid:"4965EACE-DD91-4342-B33E-46903B271309"
 },
 {
-height:42,
+height:36,
 partType:5,
 typeid:19,
 uuid:"5F29167C-3BC2-4343-A359-94331F4CCC73"
@@ -35,7 +35,7 @@ uuid:"5F29167C-3BC2-4343-A359-94331F4CCC73"
 {
 anchors:3,
 displaysTags:true,
-location:"278,7",
+location:"278,2",
 name:"brand_text",
 size:"87,30",
 styleClass:"brand_text",

@@ -13,6 +13,7 @@ function onAction$add(event) {
 	if (forms.main.isMenuOpen()) {
 		forms.main.openMenu(event);
 	}
+	//choose a widget to display
 	var c = plugins.dialogs.showSelectDialog('Choose Widget', 'Choose a widget to create', 'customers', 'orders', 'pie', 'bar', 'line');
 	//get parent layout
 	var p = scopes.UI.getInstance(scopes.svyNavigation.getCurrentItem().getFormName());
@@ -34,7 +35,6 @@ function onAction$add(event) {
 		p.addChild(i);
 		elements.tabless.addTab(forms[i.getName()])
 		elements.tabless.visible = true;
-
 		forms.main.initMenu();
 	}
 }

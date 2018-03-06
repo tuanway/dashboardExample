@@ -45,6 +45,7 @@ function selectMenuItem(id) {
  * @properties={typeid:24,uuid:"115FCFCA-7750-4F82-9808-56635C9998C9"}
  */
 function onLoad(event) {	
+	//if on a mobile device don't allow showing partial menu.
 	if (plugins.metatagTag.getDeviceWidth() <= 500) {
 		var f = solutionModel.getForm(controller.getName())
 		var c = f.getWebComponent('sidenav')

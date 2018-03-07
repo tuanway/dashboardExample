@@ -12,7 +12,7 @@
 	width: 100%;
 }
 
-.layout_1 {	
+.layout_1 {
 	width: 99%;
 	height: 95%;
 }
@@ -108,21 +108,20 @@
 }
 
 .tab_panel_close:before {
-	color: black;
+	color: gray;
 	content: '\f00d';
 	font-family: FontAwesome;
 }
 
+.tab_panel_close:hover:before {
+	color: black;
+	content: '\f00d';
+	font-family: FontAwesome;	
+	font-weight: bolder;
+}
+
 .tab_panel_close:hover {
 	text-decoration: none !important;
-	color: gray;
-	content: '\f00d';
-	font-family: FontAwesome;
-	border: 1px dotted gray;
-	border-radius: 10px;
-	background-color: #e6e6e6;
-	border-color: #adadad;
-	padding: 3px;
 }
 
 /* Tab Panel Plus */

@@ -95,10 +95,26 @@
 	color: black !important;
 }
 
+.tab_panel_close>a {
+	text-decoration: none;
+}
+
 .tab_panel_close:before {
 	color: black;
 	content: '\f00d';
 	font-family: FontAwesome;
+}
+
+.tab_panel_close:hover {
+	text-decoration:none!important;
+	color: black;
+	content: '\f00d';
+	font-family: FontAwesome;
+	border: 1px dotted gray;
+	border-radius: 10px;
+	background-color: #e6e6e6;
+	border-color: #adadad;
+	padding:3px;
 }
 
 /* Tab Panel Plus */

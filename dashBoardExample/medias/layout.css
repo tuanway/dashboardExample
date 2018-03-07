@@ -83,20 +83,21 @@
 /* layout Specific */
 
 /* Tab Panel Plus */
-.tab_panel {
-	color: black !important;
-}
+
 /*Selected Tab*/
+.nav-tabs>li>a {
+	border: 1px solid #00000014;
+}
+
 .tab_panel>.nav-tabs>li.active>a,.nav-tabs>li.active>a:hover,.nav-tabs>li.active>a:focus
 	{
 	background-color: #d3d3d37a;
-	color: black !important;
 }
 
 .nav-tabs>li.active>a,.nav-tabs>li.active>a:hover,.nav-tabs>li.active>a:focus
 	{
+	font-weight: bold;
 	background-color: #d3d3d37a;
-	color: black !important;
 }
 
 .tab_panel>.nav-tabs>li>a {
@@ -116,11 +117,15 @@
 .tab_panel_close:hover:before {
 	color: black;
 	content: '\f00d';
-	font-family: FontAwesome;	
+	font-family: FontAwesome;
 	font-weight: bolder;
 }
 
 .tab_panel_close:hover {
+	text-decoration: none !important;
+}
+
+.tab_panel_close:active {
 	text-decoration: none !important;
 }
 

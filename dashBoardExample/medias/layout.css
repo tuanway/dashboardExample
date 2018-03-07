@@ -3,7 +3,7 @@
 'UI.css'
 );
 /* layout Specific */
-.layout_15,.layout_21 {
+.layout_15,.layout_21,.layout_1 {
 	border-radius: 10px;
 	margin-top: 5px;
 	margin-left: 5px;
@@ -12,7 +12,8 @@
 	width: 100%;
 }
 
-.layout_1 {
+.layout_1 {	
+	width: 99%;
 	height: 95%;
 }
 
@@ -88,6 +89,13 @@
 /*Selected Tab*/
 .tab_panel>.nav-tabs>li.active>a,.nav-tabs>li.active>a:hover,.nav-tabs>li.active>a:focus
 	{
+	background-color: #d3d3d37a;
+	color: black !important;
+}
+
+.nav-tabs>li.active>a,.nav-tabs>li.active>a:hover,.nav-tabs>li.active>a:focus
+	{
+	background-color: #d3d3d37a;
 	color: black !important;
 }
 
@@ -106,15 +114,15 @@
 }
 
 .tab_panel_close:hover {
-	text-decoration:none!important;
-	color: black;
+	text-decoration: none !important;
+	color: gray;
 	content: '\f00d';
 	font-family: FontAwesome;
 	border: 1px dotted gray;
 	border-radius: 10px;
 	background-color: #e6e6e6;
 	border-color: #adadad;
-	padding:3px;
+	padding: 3px;
 }
 
 /* Tab Panel Plus */

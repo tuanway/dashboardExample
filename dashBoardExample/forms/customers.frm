@@ -50,11 +50,6 @@ typeid:7,
 uuid:"AAEA778D-95F8-4D37-9508-33DE4C70B629"
 },
 {
-location:"112,168",
-typeid:4,
-uuid:"D2EA3B15-BC0B-42B6-B378-AA6CC99DD646"
-},
-{
 dataProviderID:"country",
 location:"10,184",
 size:"80,20",
@@ -69,4 +64,4 @@ showInMenu:true,
 size:"276,94",
 typeid:3,
 uuid:"276BC6D6-1E3D-4167-A4B7-E6ED0AEACA08",
-view:0
+view:3

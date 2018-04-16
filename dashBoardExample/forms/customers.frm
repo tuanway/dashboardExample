@@ -6,7 +6,7 @@ items:[
 {
 dataProviderID:"address",
 location:"10,129",
-size:"147,20",
+size:"207,20",
 text:"Address",
 typeid:7,
 uuid:"60A674A3-D19D-469B-96E1-C7AF4AB6CAB6"
@@ -44,10 +44,15 @@ uuid:"A9F74E05-1BBB-46CE-8124-31BEBC46D27E"
 {
 dataProviderID:"companyname",
 location:"10,104",
-size:"130,20",
+size:"220,20",
 text:"Company",
 typeid:7,
 uuid:"AAEA778D-95F8-4D37-9508-33DE4C70B629"
+},
+{
+location:"112,168",
+typeid:4,
+uuid:"D2EA3B15-BC0B-42B6-B378-AA6CC99DD646"
 },
 {
 dataProviderID:"country",
@@ -64,4 +69,4 @@ showInMenu:true,
 size:"276,94",
 typeid:3,
 uuid:"276BC6D6-1E3D-4167-A4B7-E6ED0AEACA08",
-view:3
+view:0

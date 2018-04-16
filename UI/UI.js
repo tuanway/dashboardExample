@@ -59,7 +59,7 @@ function Instance(title, f, tabIndex) {
 	if (!application.createNewFormInstance(f, this.name)) throw 'failed to create instance';
 
 	//create window for instance
-	var w = application.createWindow(this.name, JSWindow.DIALOG);
+	var w = application.createWindow(this.name, JSWindow.MODAL_DIALOG);
 	w.storeBounds = true;
 	w.resizable = true;
 	w.title = title;
@@ -260,7 +260,6 @@ function removeChildInstance(parent, child) {
 	var children = ins.getChildren()
 	for (var i = 0; i < children.length; i++) {
 		if (children[i].getName() == child) {
-			application.output(children[i].getName() + '|' + child)
 			children.splice(i, 1);
 			return;
 		}

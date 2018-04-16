@@ -1,7 +1,5 @@
-@import
-(
-'UI.css'
-);
+@import('UI.css');
+
 /* layout Specific */
 .layout_15,.layout_21,.layout_1 {
 	border-radius: 10px;

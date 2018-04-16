@@ -54,6 +54,11 @@ html {
 }
 
 /* top navigation bar */
+/*fix issue with IE showing image in tab (takes up extra space)*/
+.nav-tabs > li > a img {
+	width:0px;
+}
+
 .menu_btn,.search_btn,.settings_btn {
 	border: 1px solid lightgray;
 	background-color: transparent;
@@ -122,3 +127,32 @@ html {
 	border: 1px dotted gray;
 }
 /* top navigation bar */
+
+
+
+input[type=checkbox] {
+	height: 0px;
+	border: none;
+}
+
+/*use font awesome checkboxes*/
+input[type=checkbox]:before {	
+	line-height: 0px;
+	display: block;
+	font-family: FontAwesome;
+	content: "\f096";
+	font-family: FontAwesome;
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: inherit;
+}
+
+input[type=checkbox]:checked:before {
+	line-height: 0px;
+	display: block;
+	font-family: FontAwesome;
+	content: "\f046";
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: inherit;
+}

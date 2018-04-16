@@ -7,6 +7,7 @@
 		<project>fastclick</project>
 		<project>metatag</project>
 		<project>svyNavigation</project>
+		<project>servoy-extra-components</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

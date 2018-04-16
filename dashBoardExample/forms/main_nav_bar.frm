@@ -6,6 +6,15 @@ parameters:null\
 }\
 }",
 extendsID:"95F06443-A76C-4DB8-B911-2872B5D24BCB",
+items:[
+{
+extendsID:"A91FC151-AAC1-46A7-AA2C-1FA70CC437AA",
+imageMediaID:"E5BD9324-51EC-4645-8B02-9055D7F35A90",
+location:"42,9",
+typeid:7,
+uuid:"53E23063-983D-41C6-9909-4096B3F643EC"
+}
+],
 name:"main_nav_bar",
 onLoadMethodID:"C4123174-E07B-4B27-8A9A-112E8D06C50E",
 typeid:3,

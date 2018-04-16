@@ -1,6 +1,13 @@
 [
 {
 encapsulation:0,
+mimeType:"image/png",
+name:"logo-servoy.png",
+typeid:37,
+uuid:"E5BD9324-51EC-4645-8B02-9055D7F35A90"
+},
+{
+encapsulation:0,
 mimeType:"text/css",
 name:"UI.css",
 typeid:37,

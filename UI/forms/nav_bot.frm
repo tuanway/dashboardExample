@@ -5,6 +5,7 @@ items:[
 {
 anchors:3,
 displaysTags:true,
+imageMediaID:"E5BD9324-51EC-4645-8B02-9055D7F35A90",
 location:"368,3",
 name:"brand_logo",
 size:"99,30",

@@ -8,6 +8,13 @@
 	overflow-y:hidden;
 }
 
+.layout_15 .calendar {	
+	padding:15px;
+	padding-top: 22px;
+	height:42vh;
+	overflow-y:hidden;
+}
+
 .layout_1 .calendar {	
 	padding:15px;
 	padding-top: 22px;

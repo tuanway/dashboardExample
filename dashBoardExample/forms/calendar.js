@@ -10,35 +10,36 @@
  * @SuppressWarnings(wrongparameters)
  */
 function onShow(firstShow, event) {
-	var tmrw = new Date();
-	tmrw.setDate(tmrw.getDate()+1);
-	var options = {
-		eventSources: [{
-			events: [{
-				title: "Meeting with Client",
-				start: new Date(),
-				allDay: true
+	if (firstShow) {
+		var tmrw = new Date();
+		tmrw.setDate(tmrw.getDate() + 1);
+		var options = {
+			eventSources: [{
+				events: [{
+					title: "Meeting with Client",
+					start: new Date(),
+					allDay: true
+				}],
+				color: 'black'
+			}, {
+				events: [{
+					title: "Dinner Event",
+					start: tmrw,
+					allDay: true
+				}],
+				color: 'red'
 			}],
-			color: 'black'
-		},{
-			events: [{
-				title: "Dinner Event",
-				start: tmrw,
-				allDay: true
-			}],
-			color: 'red'
-		}],
-		selectable: true,
-		editable: true,
-		defaultView: 'listWeek',
-		showCurrentTimeline: true,
-		header: {
-			left: 'prev,next today myCustomButton',
-		    center: 'My Calendar',
-			right: 'month,agendaWeek,listWeek,agendaDay'
+			selectable: true,
+			editable: true,
+			defaultView: 'listWeek',
+			showCurrentTimeline: true,
+			header: {
+				left: 'prev,next today myCustomButton',
+				center: 'My Calendar',
+				right: 'month,agendaWeek,listWeek,agendaDay'
+			}
 		}
+
+		elements.calendar.fullCalendar(options);
 	}
-
-	elements.calendar.fullCalendar(options);
-
 }

@@ -1,5 +1,26 @@
 @import('UI.css');
 
+/* calendar Specific */
+.layout_21 .calendar {
+	padding:15px;
+	padding-top: 22px;
+	height:42vh;
+	overflow-y:hidden;
+}
+
+.layout_1 .calendar {	
+	padding:15px;
+	padding-top: 22px;
+	height:100vh;
+	overflow-y:hidden;
+}
+
+.calendar .fc-scroller {
+	overflow-y:hidden!important;
+}
+/* calendar Specific */
+
+
 /* layout Specific */
 .layout_15,.layout_21,.layout_1 {
 	border-radius: 10px;
@@ -22,7 +43,7 @@
 	}
 	.layout_21 {
 		width: 98.5%;
-		height: 300px;
+		height: 45vh;
 	}
 }
 

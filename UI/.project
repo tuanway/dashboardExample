@@ -8,6 +8,7 @@
 		<project>metatag</project>
 		<project>svyNavigation</project>
 		<project>servoy-extra-components</project>
+		<project>fullcalendarcomponent</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
